@@ -65,7 +65,7 @@ namespace Assets.Scripts.Behaviors
             _pursuing = false;
 
             if (_acquiredTargets.Count > 0) { TryPursuing(_acquiredTargets[0]); }
-            else { _character.Move(Vector2.zero); }
+            else { _character.InputMove(Vector2.zero); }
         }
     }
 }

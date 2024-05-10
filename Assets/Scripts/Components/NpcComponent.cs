@@ -10,13 +10,13 @@ namespace Assets.Scripts.Components
     {
         [SerializeField] private ItemComponent _requiredFetchItem;
 
-        public override void OnInteract(PlayerComponent player, InventoryComponent inventory)
+        public override void OnInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter)
         {
-            _item = GetComponentInChildren<ItemComponent>();
-            StartCoroutine(IInteract(player, inventory));
+            this.item = GetComponentInChildren<ItemComponent>();
+            StartCoroutine(IInteract(player, playerCharacter));
         }
 
-        private IEnumerator IInteract(PlayerComponent player, InventoryComponent inventory)
+        private IEnumerator IInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter)
         {
             if (_dialog != string.Empty)
             {
@@ -24,13 +24,13 @@ namespace Assets.Scripts.Components
                 yield return player.DialogCoroutine;
             }
 
-            if (_item != null)
+            if (this.item != null)
             {
-                yield return inventory.IAddContents(_item, player, (ItemComponent item) => { _item = item; });
+                yield return playerCharacter.Inventory.IAddContents(this.item, player, (ItemComponent item) => { this.item = item; });
 
-                if (_item != null)
+                if (this.item != null)
                 {
-                    player.AwaitDialog($"You already have a { _item.name }!\nCannot carry more.", DialogAwaitType.Acknowledge, InputType.Character);
+                    player.AwaitDialog($"You already have a { this.item.name }!\nCannot carry more.", DialogAwaitType.Acknowledge, InputType.Character);
                     yield return player.DialogCoroutine;
                 }
             }

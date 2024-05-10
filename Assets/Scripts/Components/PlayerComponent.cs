@@ -55,12 +55,12 @@ namespace Assets.Scripts.Components
             _playerInput.ButtonStart = null;
             _playerInput.ButtonSelect = null;
 
-            _playerCharacterComponent.Move(Vector2.zero);
+            _playerCharacterComponent.InputMove(Vector2.zero);
         }
 
         private void SetInputCharacter()
         {
-            _playerInput.DirectionalPad = _playerCharacterComponent.Move;
+            _playerInput.DirectionalPad = _playerCharacterComponent.InputMove;
             _playerInput.ButtonA = () => _playerCharacterComponent.Interact(this);
             _playerInput.ButtonB = _playerCharacterComponent.Attack;
             _playerInput.ButtonX = () => AwaitInventory(InputType.Character);

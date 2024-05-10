@@ -7,47 +7,62 @@ using UnityEngine;
 
 public class PlayerCharacterComponent : CharacterComponent
 {
-    public HeadsUpDisplayComponent _HUD;
-    public PlayerComponent _player;
-    public ItemComponent _equippedItem;
-    public InventoryComponent _inventory;
-    public WeaponComponent _weapon = null;
+    [SerializeField] private HeadsUpDisplayComponent HUD;
+    [SerializeField] private PlayerComponent player;
+    [SerializeField] private ItemComponent equippedItem;
+    [SerializeField] private InventoryComponent inventory;
+    [SerializeField] private KeyChainComponent keyChain;
+    [SerializeField] private WalletComponent wallet;
+    [SerializeField] private WeaponComponent weapon;
 
-    public PlayerComponent Player { get => _player; }
-    public InventoryComponent Inventory { get => _inventory; }
+    public PlayerComponent Player { get => this.player; }
+    public InventoryComponent Inventory { get => this.inventory; }
+    public KeyChainComponent KeyChain { get => this.keyChain;  }
 
     void Awake()
     {
         _animator = GetComponent<Animator>();
-        EquipItem(_inventory.GetDefaultItem());
-        _HUD.HealthBarComponent.UpdateHealth(_health);
-        _HUD.MoneyComponent.UpdateMoney(_money);
+        EquipItem(this.inventory.GetDefaultItem());
+        this.HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
     }
 
     public void EquipItem(ItemComponent item)
     {
-        _equippedItem = item;
-        _HUD.EquippedItemComponent.UpdateEquippedItem(item);
+        this.equippedItem = item;
+        this.HUD.EquippedItemComponent.UpdateEquippedItem(item);
+    }
+
+    public void AddMoney(int value)
+    {
+        this.wallet.AddMoney(value);
+        this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
+    }
+
+    public void TakeMoney(int value)
+    {
+        this.wallet.TakeMoney(value);
+        this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
     }
 
     public override void RestoreHealth(int value)
     {
         base.RestoreHealth(value);
-        _HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.HealthBarComponent.UpdateHealth(_health);
     }
 
     public override void ReceiveAttack(AttackModel attack)
     {
         base.ReceiveAttack(attack);
-        _HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.HealthBarComponent.UpdateHealth(_health);
     }
 
-    public void Interact(PlayerComponent player) => ParseInteraction()?.OnInteract(player, _inventory);
+    public void Interact(PlayerComponent player) => ParseInteraction()?.OnInteract(player, this);
 
     public InteractableComponent ParseInteraction()
     {
-        var start = _rigidbody.position + _collider.offset + (_facing * .625f) + (new Vector2(_facing.y, _facing.x) * .375f);
-        var end = _rigidbody.position + _collider.offset + (_facing * .625f) - (new Vector2(_facing.y, _facing.x) * .375f);
+        var start = _rigidbody.position + _collider.offset + (_facing * 1.25f) + (new Vector2(_facing.y, _facing.x) * 0.75f);
+        var end = _rigidbody.position + _collider.offset + (_facing * 1.25f) - (new Vector2(_facing.y, _facing.x) * 0.75f);
 
         if (GameManager.Instance.DebugMode) { Debug.DrawLine(start, end, Color.green); }
         RaycastHit2D hit = Physics2D.Linecast(start, end, 1 << LayerMask.NameToLayer("Object"));
@@ -57,7 +72,7 @@ public class PlayerCharacterComponent : CharacterComponent
 
     public void Attack()
     {
-        _weapon.Use(this);
+        this.weapon.Use(this);
 
         if (!GetComponent<Animator>().GetBool("IsAttacking"))
         {
@@ -70,12 +85,12 @@ public class PlayerCharacterComponent : CharacterComponent
     private IEnumerator IAttack()
     {
         _animator.SetBool("IsAttacking", true);
-        var multiplier = _moveSpeedMultiplier;
-        _moveSpeedMultiplier = 0.0f;
+        var multiplier = moveSpeedMultiplier;
+        moveSpeedMultiplier = 0.0f;
 
         yield return new WaitForSeconds(1f / 3f); // TODO: Replace with anim.ClipLength if possible: will need to figure out how to access the clip from the Animator
 
         _animator.SetBool("IsAttacking", false);
-        _moveSpeedMultiplier = multiplier;
+        moveSpeedMultiplier = multiplier;
     }
 }

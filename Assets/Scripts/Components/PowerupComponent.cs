@@ -70,7 +70,7 @@ namespace Assets.Scripts.Components
 
         private void AddCash(PlayerCharacterComponent playerCharacter, int amount)
         {
-            playerCharacter._money += amount;
+            playerCharacter.AddMoney(amount);
             Destroy(transform.parent.gameObject);
         }
     }

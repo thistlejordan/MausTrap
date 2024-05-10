@@ -20,64 +20,76 @@ public class CharacterComponent : MonoBehaviour
 
     public Vector2 _facing;
     [SerializeField] private float _rotation;
-    public float _moveSpeed;
-    public float _moveSpeedMultiplier;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] protected float moveSpeedMultiplier;
 
     public FactionsEnum _faction;
     public bool _invincible;
     public int _maxHealth;
     public int _health;
     public int _defense;
-    public int _money;
 
-    public List<InputDirection> _inputs;
-    public Vector2 _curDir = Vector2.zero;
+
+    private List<DirectionEnum> inputs;
+    private Vector2 currentDirection = Vector2.zero;
 
     // Model
-    public bool _controlLoss = false;
+    protected bool controlLoss = false;
 
     public Collider2D Collider { get => _collider; }
+    public bool ControlLoss { get => this.controlLoss; }
+    public Vector2 CurrentDirection { get => this.currentDirection; }
     public Vector2 Facing { get => _facing; }
-    public bool Invincible { get => _invincible; }
     public FactionsEnum Faction { get => _faction; }
+    public List<DirectionEnum> Inputs { get => this.inputs; }
+    public bool Invincible { get => _invincible; }
+    public float MoveSpeedMultiplier { get => this.moveSpeedMultiplier; }
     public float Rotation { get => _rotation; }
 
-    public void Move(Vector2 inputs)
+    public void InputMove(Vector2 newInputs)
     {
-        if (inputs.x != _curDir.x)
+        this.inputs ??= new List<DirectionEnum>();
+
+        if (newInputs.x != this.currentDirection.x)
         {
-            if (_curDir.x < 0) { _inputs.Remove(InputDirection.LEFT); }
-            if (_curDir.x > 0) { _inputs.Remove(InputDirection.RIGHT); }
+            if (this.currentDirection.x < 0) { this.inputs.Remove(DirectionEnum.LEFT); }
+            if (this.currentDirection.x > 0) { this.inputs.Remove(DirectionEnum.RIGHT); }
 
-            _curDir.x = inputs.x;
+            this.currentDirection.x = newInputs.x;
 
-            if (_curDir.x < 0) { _inputs.Add(InputDirection.LEFT); }
-            if (_curDir.x > 0) { _inputs.Add(InputDirection.RIGHT); }
+            if (this.currentDirection.x < 0) { this.inputs.Add(DirectionEnum.LEFT); }
+            if (this.currentDirection.x > 0) { this.inputs.Add(DirectionEnum.RIGHT); }
         }
 
-        if (inputs.y != _curDir.y)
+        if (newInputs.y != this.currentDirection.y)
         {
-            if (_curDir.y < 0) { _inputs.Remove(InputDirection.DOWN); }
-            if (_curDir.y > 0) { _inputs.Remove(InputDirection.UP); }
+            if (this.currentDirection.y < 0) { this.inputs.Remove(DirectionEnum.DOWN); }
+            if (this.currentDirection.y > 0) { this.inputs.Remove(DirectionEnum.UP); }
 
-            _curDir.y = inputs.y;
+            this.currentDirection.y = newInputs.y;
 
-            if (_curDir.y < 0) { _inputs.Add(InputDirection.DOWN); }
-            if (_curDir.y > 0) { _inputs.Add(InputDirection.UP); }
-        }
-
-        if (_inputs.Count > 0) { UpdateFacing(_inputs[0]); }
-
-        if (!_controlLoss)
-        {
-            if (inputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
-            if (inputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
-
-            _rigidbody.velocity = inputs.normalized * _moveSpeed * _moveSpeedMultiplier;
+            if (this.currentDirection.y < 0) { this.inputs.Add(DirectionEnum.DOWN); }
+            if (this.currentDirection.y > 0) { this.inputs.Add(DirectionEnum.UP); }
         }
 
         // Debug
-        if (_queueText != null) { UpdateQueueText(); }
+        if (_queueText != null) UpdateQueueText();
+
+        if (!this.controlLoss)
+        {
+            if (this.inputs.Count > 0) UpdateFacing(this.inputs[0]);
+            Move(newInputs);
+        }
+    }
+
+    public void Move(Vector2 newInputs) => Move(newInputs, this.moveSpeedMultiplier);
+
+    public void Move(Vector2 newInputs, float moveSpeedMultiplier)
+    {
+        if (newInputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
+        if (newInputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
+
+        _rigidbody.velocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
     }
 
     public virtual void RestoreHealth(int value) => _health += (_health + value > _maxHealth) ? 0 : value;
@@ -107,7 +119,7 @@ public class CharacterComponent : MonoBehaviour
         }
     }
 
-    public void UpdateFacing(InputDirection direction)
+    public void UpdateFacing(DirectionEnum direction)
     {
         _facing = CharacterHelper.GetFacing(direction);
         _rotation = CharacterHelper.GetRotation(direction);
@@ -119,7 +131,7 @@ public class CharacterComponent : MonoBehaviour
     public void UpdateQueueText()
     {
         _queueText.text = "";
-        foreach (InputDirection input in _inputs) { _queueText.text += input.ToString() + "\n"; }
+        foreach (DirectionEnum input in this.inputs) { _queueText.text += input.ToString() + "\n"; }
     }
 
     private void InvincibilityFrames()
@@ -149,10 +161,10 @@ public class CharacterComponent : MonoBehaviour
 
     private IEnumerator IKnockback(Vector2 direction, float force)
     {
-        _controlLoss = true;
+        this.controlLoss = true;
         _rigidbody.velocity = direction * force;
         yield return new WaitForSeconds(0.1f);
-        _controlLoss = false;
+        this.controlLoss = false;
     }
 
     private void Die() => StartCoroutine(IDie());
@@ -163,4 +175,24 @@ public class CharacterComponent : MonoBehaviour
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
     }
+
+    public virtual void SetControlLoss(float duration) => StartCoroutine(IControlLoss(duration));
+
+    public virtual void SetControlLoss(bool value) => this.controlLoss = value;
+
+    public IEnumerator IControlLoss(float duration)
+    {
+        this.controlLoss = true;
+        yield return new WaitForSeconds(duration);
+        this.controlLoss = false;
+    }
+
+    public IEnumerator IControlLoss(Coroutine coroutine)
+    {
+        this.controlLoss = true;
+        yield return coroutine;
+        this.controlLoss = false;
+    }
+
+    public void SetMoveSpeedMultiplier(float value) => this.moveSpeedMultiplier = value;
 }

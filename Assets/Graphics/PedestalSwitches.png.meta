@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 0145c56cba17d5946a0cfc588d185008
+guid: 6a1159e459aac6141a744f3aec5311ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: ChestSprite_0
+      213: -3472066909281631899
+    second: PedestalSwitches_0
   - first:
-      213: 21300002
-    second: ChestSprite_1
+      213: 117796181417701871
+    second: PedestalSwitches_1
+  - first:
+      213: 5245143385990006552
+    second: PedestalSwitches_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,14 +70,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +89,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,43 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChestSprite_0
+      name: PedestalSwitches_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 14
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: 56141e3ba8db0dfc0800000000000000
+      internalID: -3472066909281631899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestSprite_1
+      name: PedestalSwitches_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
+        y: 14
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: fe1bc4db00f72a100800000000000000
+      internalID: 117796181417701871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PedestalSwitches_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 14
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8178ced9e1e7ac840800000000000000
+      internalID: 5245143385990006552
       vertices: []
       indices: 
       edges: []
@@ -141,7 +165,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

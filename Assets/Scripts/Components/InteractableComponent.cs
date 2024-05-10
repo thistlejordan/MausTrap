@@ -10,7 +10,7 @@ namespace Assets.Scripts.Components
         protected SpriteRenderer _spriteRenderer;
 
         [SerializeField] protected string _dialog;
-        [SerializeField] protected ItemComponent _item;
+        [SerializeField] protected ItemComponent item;
 
         #endregion
 
@@ -22,7 +22,7 @@ namespace Assets.Scripts.Components
 
             var item = GetComponentInChildren<ItemComponent>();
 
-            if (_item == null && item != null)
+            if (this.item == null && item != null)
             {
                 PutItem(item);
             }
@@ -32,7 +32,7 @@ namespace Assets.Scripts.Components
 
         #region Methods
 
-        public abstract void OnInteract(PlayerComponent player, InventoryComponent inventory);
+        public abstract void OnInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter);
 
         public void PutItem(ItemComponent item)
         {
@@ -42,23 +42,23 @@ namespace Assets.Scripts.Components
                 return;
             }
 
-            _item = item;
-            _item.transform.SetParent(this.transform);
-            _item.Hide();
+            this.item = item;
+            this.item.transform.SetParent(this.transform);
+            this.item.Hide();
         }
 
         public ItemComponent TakeItem()
         {
-            var item = _item;
-            _item = null;
+            var item = this.item;
+            this.item = null;
             return item;
         }
 
         public void RemoveContents()
         {
-            if (_item != null)
+            if (this.item != null)
             {
-                Destroy(_item);
+                Destroy(this.item);
             }
         }
 

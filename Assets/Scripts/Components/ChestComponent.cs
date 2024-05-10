@@ -24,25 +24,32 @@ namespace Assets.Scripts.Components
 
         #region Methods
 
-        public override void OnInteract(PlayerComponent player, InventoryComponent inventory)
+        public override void OnInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter)
         {
-            StartCoroutine(IOpenChest(player, inventory));
+            StartCoroutine(IOpenChest(player, playerCharacter));
         }
 
-        private IEnumerator IOpenChest(PlayerComponent player, InventoryComponent inventory)
+        private IEnumerator IOpenChest(PlayerComponent player, PlayerCharacterComponent playerCharacter)
         {
             if (_isOpen || player.Character.Facing != Vector2.up) { yield break; }
 
             _spriteRenderer.sprite = _openSprite;
             AudioManager.Instance.m_AudioSource.PlayOneShot(AudioManager.Instance.m_OpenChestSoundEffect, 0.1f);
 
-            if (_item != null)
+            if (this.item != null)
             {
-                yield return inventory.IAddContents(_item, player, (ItemComponent item) => { _item = item; });
-
-                if (_item != null)
+                var key = this.item.GetComponent<KeyComponent>();
+                if (!(key is null))
                 {
-                    player.AwaitDialog($"You already have a {_item.name}!\nCannot carry more.", DialogAwaitType.Acknowledge, InputType.Character);
+                    playerCharacter.KeyChain.AddKey(key);
+                    yield break;
+                }
+
+                yield return playerCharacter.Inventory.IAddContents(this.item, player, (ItemComponent item) => { this.item = item; });
+
+                if (this.item != null)
+                {
+                    player.AwaitDialog($"You already have a {this.item.name}!\nCannot carry more.", DialogAwaitType.Acknowledge, InputType.Character);
 
                     yield return player.DialogCoroutine;
 
@@ -60,7 +67,7 @@ namespace Assets.Scripts.Components
                 yield return player.DialogCoroutine;
             }
 
-            _isOpen = (_item == null);
+            _isOpen = (this.item == null);
         }
 
         #endregion
