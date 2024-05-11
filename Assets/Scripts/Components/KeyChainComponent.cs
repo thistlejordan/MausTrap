@@ -1,11 +1,14 @@
 ﻿using Assets.Scripts.Components.GameWorld;
+using Assets.Scripts.Components.Items;
 using Assets.Scripts.Enums;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Components.Items
+namespace Assets.Scripts.Components
 {
-    public class KeyChainComponent : MonoBehaviour
+    public class KeyChainComponent : ContainerComponent
     {
         // Dictionary for keys by level
         // LevelEnum: (keyCount, hasMaster)
@@ -51,6 +54,32 @@ namespace Assets.Scripts.Components.Items
             {
                 Debug.LogWarning($"Tried using key for {@lock.Level}, but don't have one. Should use 'HasKey' before calling 'UseKey'");
             }
+        }
+
+        public override IEnumerator IAddItem(ItemComponent item, PlayerComponent player, Action<ItemComponent> callback)
+        {
+            var key = item.GetComponent<KeyComponent>();
+
+            if (key is null || (key.IsBigKey && keyDictionary[key.Level].Item2.Equals(true))) callback(item);
+            else
+            {
+                if (!this.keyDictionary.ContainsKey(key.Level)) this.keyDictionary.Add(key.Level, (0, false));
+            }
+
+            if (key.IsBigKey)
+            {
+                this.keyDictionary[key.Level] = (this.keyDictionary[key.Level].Item1, true);
+            }
+            else
+            {
+                this.keyDictionary[key.Level] = (this.keyDictionary[key.Level].Item1 + 1, this.keyDictionary[key.Level].Item2);
+            }
+
+            // _inventoryMenu.AddItemToInventoryMenu(item);
+            AudioManager.Instance.m_AudioSource.PlayOneShot(AudioManager.Instance.m_ItemGetSoundEffect, 0.1f);
+            yield return player.IAwait(item.IItemGetAnimation(), InputType.Character);
+            Destroy(item);
+            callback(null);
         }
     }
 }

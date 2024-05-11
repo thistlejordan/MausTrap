@@ -41,11 +41,12 @@ namespace Assets.Scripts.Components
                 var key = this.item.GetComponent<KeyComponent>();
                 if (!(key is null))
                 {
-                    playerCharacter.KeyChain.AddKey(key);
-                    yield break;
+                    yield return playerCharacter.KeyChain.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
                 }
-
-                yield return playerCharacter.Inventory.IAddContents(this.item, player, (ItemComponent item) => { this.item = item; });
+                else
+                {
+                    yield return playerCharacter.Inventory.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
+                }
 
                 if (this.item != null)
                 {

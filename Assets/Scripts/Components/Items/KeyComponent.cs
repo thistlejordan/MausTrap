@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Components.Items
 {
-    public class KeyComponent :ItemComponent
+    public class KeyComponent : ItemComponent
     {
         [SerializeField] private LevelEnum level;
         [SerializeField] private bool isBigKey;

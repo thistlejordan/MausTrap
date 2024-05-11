@@ -26,7 +26,15 @@ namespace Assets.Scripts.Components
 
             if (this.item != null)
             {
-                yield return playerCharacter.Inventory.IAddContents(this.item, player, (ItemComponent item) => { this.item = item; });
+                var key = this.item.GetComponent<KeyComponent>();
+                if (!(key is null))
+                {
+                    yield return playerCharacter.KeyChain.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
+                }
+                else
+                {
+                    yield return playerCharacter.Inventory.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
+                }
 
                 if (this.item != null)
                 {
