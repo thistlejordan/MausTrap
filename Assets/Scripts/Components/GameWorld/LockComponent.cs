@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Components.Items;
-using Assets.Scripts.Enums;
+﻿using Assets.Scripts.Enums;
 using UnityEngine;
 
 namespace Assets.Scripts.Components.GameWorld
