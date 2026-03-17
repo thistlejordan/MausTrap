@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assets.Scripts.Enums
+﻿namespace Assets.Scripts.Enums
 {
     public enum FactionsEnum
     {
+        None,
         Player,
-        Allied
+        Allied,
+        Enemy
     };
 }

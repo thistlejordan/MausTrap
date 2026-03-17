@@ -4,8 +4,6 @@ namespace Assets.Scripts.Components
 {
     public class PlayerInputComponent : MonoBehaviour
     {
-        Vector2 m_Inputs = new Vector2();
-
         public delegate void DirectionalInput(Vector2 direction);
         public delegate void ButtonInput();
 
@@ -29,14 +27,14 @@ namespace Assets.Scripts.Components
 
             DirectionalPad?.Invoke(dir);
 
-            if (Input.GetButtonDown("ButtonA")) { ButtonA(); }
-            if (Input.GetButtonDown("ButtonB")) { ButtonB(); }
-            if (Input.GetButtonDown("ButtonX")) { ButtonX(); }
-            if (Input.GetButtonDown("ButtonY")) { ButtonY(); }
-            if (Input.GetButtonDown("ButtonL")) { ButtonL(); }
-            if (Input.GetButtonDown("ButtonR")) { ButtonR(); }
-            if (Input.GetButtonDown("ButtonStart")) { ButtonStart(); }
-            if (Input.GetButtonDown("ButtonSelect")) { ButtonSelect(); }
+            if (Input.GetButtonDown("ButtonA")) { ButtonA?.Invoke(); }
+            if (Input.GetButtonDown("ButtonB")) { ButtonB?.Invoke(); }
+            if (Input.GetButtonDown("ButtonX")) { ButtonX?.Invoke(); }
+            if (Input.GetButtonDown("ButtonY")) { ButtonY?.Invoke(); }
+            if (Input.GetButtonDown("ButtonL")) { ButtonL?.Invoke(); }
+            if (Input.GetButtonDown("ButtonR")) { ButtonR?.Invoke(); }
+            if (Input.GetButtonDown("ButtonStart")) { ButtonStart?.Invoke(); }
+            if (Input.GetButtonDown("ButtonSelect")) { ButtonSelect?.Invoke(); }
         }
     }
 }

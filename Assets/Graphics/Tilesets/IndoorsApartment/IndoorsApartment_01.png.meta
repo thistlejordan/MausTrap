@@ -1,98 +1,357 @@
 fileFormatVersion: 2
 guid: 0c961cc27295bfe45902f7b672a36816
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: IndoorsApartment_01_0
-    21300002: IndoorsApartment_01_1
-    21300004: IndoorsApartment_01_2
-    21300006: IndoorsApartment_01_3
-    21300008: IndoorsApartment_01_4
-    21300010: IndoorsApartment_01_5
-    21300012: IndoorsApartment_01_6
-    21300014: IndoorsApartment_01_7
-    21300016: IndoorsApartment_01_8
-    21300018: IndoorsApartment_01_9
-    21300020: IndoorsApartment_01_10
-    21300022: IndoorsApartment_01_11
-    21300024: IndoorsApartment_01_12
-    21300026: IndoorsApartment_01_13
-    21300028: IndoorsApartment_01_14
-    21300030: IndoorsApartment_01_15
-    21300032: IndoorsApartment_01_16
-    21300034: IndoorsApartment_01_17
-    21300036: IndoorsApartment_01_18
-    21300038: IndoorsApartment_01_19
-    21300040: IndoorsApartment_01_20
-    21300042: IndoorsApartment_01_21
-    21300044: IndoorsApartment_01_22
-    21300046: IndoorsApartment_01_23
-    21300048: IndoorsApartment_01_24
-    21300050: IndoorsApartment_01_25
-    21300052: IndoorsApartment_01_26
-    21300054: IndoorsApartment_01_27
-    21300056: IndoorsApartment_01_28
-    21300058: IndoorsApartment_01_29
-    21300060: IndoorsApartment_01_30
-    21300062: IndoorsApartment_01_31
-    21300064: IndoorsApartment_01_32
-    21300066: IndoorsApartment_01_33
-    21300068: IndoorsApartment_01_34
-    21300070: IndoorsApartment_01_35
-    21300072: IndoorsApartment_01_36
-    21300074: IndoorsApartment_01_37
-    21300076: IndoorsApartment_01_38
-    21300078: IndoorsApartment_01_39
-    21300080: IndoorsApartment_01_40
-    21300082: IndoorsApartment_01_41
-    21300084: IndoorsApartment_01_42
-    21300086: IndoorsApartment_01_43
-    21300088: IndoorsApartment_01_44
-    21300090: IndoorsApartment_01_45
-    21300092: IndoorsApartment_01_46
-    21300094: IndoorsApartment_01_47
-    21300096: IndoorsApartment_01_48
-    21300098: IndoorsApartment_01_49
-    21300100: IndoorsApartment_01_50
-    21300102: IndoorsApartment_01_51
-    21300104: IndoorsApartment_01_52
-    21300106: IndoorsApartment_01_53
-    21300108: IndoorsApartment_01_54
-    21300110: IndoorsApartment_01_55
-    21300112: IndoorsApartment_01_56
-    21300114: IndoorsApartment_01_57
-    21300116: IndoorsApartment_01_58
-    21300118: IndoorsApartment_01_59
-    21300120: IndoorsApartment_01_60
-    21300122: IndoorsApartment_01_61
-    21300124: IndoorsApartment_01_62
-    21300126: IndoorsApartment_01_63
-    21300128: IndoorsApartment_01_64
-    21300130: IndoorsApartment_01_65
-    21300132: IndoorsApartment_01_66
-    21300134: IndoorsApartment_01_67
-    21300136: IndoorsApartment_01_68
-    21300138: IndoorsApartment_01_69
-    21300140: IndoorsApartment_01_70
-    21300142: IndoorsApartment_01_71
-    21300144: IndoorsApartment_01_72
-    21300146: IndoorsApartment_01_73
-    21300148: IndoorsApartment_01_74
-    21300150: IndoorsApartment_01_75
-    21300152: IndoorsApartment_01_76
-    21300154: IndoorsApartment_01_77
-    21300156: IndoorsApartment_01_78
-    21300158: IndoorsApartment_01_79
-    21300160: IndoorsApartment_01_80
-    21300162: IndoorsApartment_01_81
-    21300164: IndoorsApartment_01_82
-    21300166: IndoorsApartment_01_83
-    21300168: IndoorsApartment_01_84
-    21300170: IndoorsApartment_01_85
-    21300172: IndoorsApartment_01_86
-    21300174: IndoorsApartment_01_87
-    21300176: IndoorsApartment_01_88
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: IndoorsApartment_01_0
+  - first:
+      213: 21300002
+    second: IndoorsApartment_01_1
+  - first:
+      213: 21300004
+    second: IndoorsApartment_01_2
+  - first:
+      213: 21300006
+    second: IndoorsApartment_01_3
+  - first:
+      213: 21300008
+    second: IndoorsApartment_01_4
+  - first:
+      213: 21300010
+    second: IndoorsApartment_01_5
+  - first:
+      213: 21300012
+    second: IndoorsApartment_01_6
+  - first:
+      213: 21300014
+    second: IndoorsApartment_01_7
+  - first:
+      213: 21300016
+    second: IndoorsApartment_01_8
+  - first:
+      213: 21300018
+    second: IndoorsApartment_01_9
+  - first:
+      213: 21300020
+    second: IndoorsApartment_01_10
+  - first:
+      213: 21300022
+    second: IndoorsApartment_01_11
+  - first:
+      213: 21300024
+    second: IndoorsApartment_01_12
+  - first:
+      213: 21300026
+    second: IndoorsApartment_01_13
+  - first:
+      213: 21300028
+    second: IndoorsApartment_01_14
+  - first:
+      213: 21300030
+    second: IndoorsApartment_01_15
+  - first:
+      213: 21300032
+    second: IndoorsApartment_01_16
+  - first:
+      213: 21300034
+    second: IndoorsApartment_01_17
+  - first:
+      213: 21300036
+    second: IndoorsApartment_01_18
+  - first:
+      213: 21300038
+    second: IndoorsApartment_01_19
+  - first:
+      213: 21300040
+    second: IndoorsApartment_01_20
+  - first:
+      213: 21300042
+    second: IndoorsApartment_01_21
+  - first:
+      213: 21300044
+    second: IndoorsApartment_01_22
+  - first:
+      213: 21300046
+    second: IndoorsApartment_01_23
+  - first:
+      213: 21300048
+    second: IndoorsApartment_01_24
+  - first:
+      213: 21300050
+    second: IndoorsApartment_01_25
+  - first:
+      213: 21300052
+    second: IndoorsApartment_01_26
+  - first:
+      213: 21300054
+    second: IndoorsApartment_01_27
+  - first:
+      213: 21300056
+    second: IndoorsApartment_01_28
+  - first:
+      213: 21300058
+    second: IndoorsApartment_01_29
+  - first:
+      213: 21300060
+    second: IndoorsApartment_01_30
+  - first:
+      213: 21300062
+    second: IndoorsApartment_01_31
+  - first:
+      213: 21300064
+    second: IndoorsApartment_01_32
+  - first:
+      213: 21300066
+    second: IndoorsApartment_01_33
+  - first:
+      213: 21300068
+    second: IndoorsApartment_01_34
+  - first:
+      213: 21300070
+    second: IndoorsApartment_01_35
+  - first:
+      213: 21300072
+    second: IndoorsApartment_01_36
+  - first:
+      213: 21300074
+    second: IndoorsApartment_01_37
+  - first:
+      213: 21300076
+    second: IndoorsApartment_01_38
+  - first:
+      213: 21300078
+    second: IndoorsApartment_01_39
+  - first:
+      213: 21300080
+    second: IndoorsApartment_01_40
+  - first:
+      213: 21300082
+    second: IndoorsApartment_01_41
+  - first:
+      213: 21300084
+    second: IndoorsApartment_01_42
+  - first:
+      213: 21300086
+    second: IndoorsApartment_01_43
+  - first:
+      213: 21300088
+    second: IndoorsApartment_01_44
+  - first:
+      213: 21300090
+    second: IndoorsApartment_01_45
+  - first:
+      213: 21300092
+    second: IndoorsApartment_01_46
+  - first:
+      213: 21300094
+    second: IndoorsApartment_01_47
+  - first:
+      213: 21300096
+    second: IndoorsApartment_01_48
+  - first:
+      213: 21300098
+    second: IndoorsApartment_01_49
+  - first:
+      213: 21300100
+    second: IndoorsApartment_01_50
+  - first:
+      213: 21300102
+    second: IndoorsApartment_01_51
+  - first:
+      213: 21300104
+    second: IndoorsApartment_01_52
+  - first:
+      213: 21300106
+    second: IndoorsApartment_01_53
+  - first:
+      213: 21300108
+    second: IndoorsApartment_01_54
+  - first:
+      213: 21300110
+    second: IndoorsApartment_01_55
+  - first:
+      213: 21300112
+    second: IndoorsApartment_01_56
+  - first:
+      213: 21300114
+    second: IndoorsApartment_01_57
+  - first:
+      213: 21300116
+    second: IndoorsApartment_01_58
+  - first:
+      213: 21300118
+    second: IndoorsApartment_01_59
+  - first:
+      213: 21300120
+    second: IndoorsApartment_01_60
+  - first:
+      213: 21300122
+    second: IndoorsApartment_01_61
+  - first:
+      213: 21300124
+    second: IndoorsApartment_01_62
+  - first:
+      213: 21300126
+    second: IndoorsApartment_01_63
+  - first:
+      213: 21300128
+    second: IndoorsApartment_01_64
+  - first:
+      213: 21300130
+    second: IndoorsApartment_01_65
+  - first:
+      213: 21300132
+    second: IndoorsApartment_01_66
+  - first:
+      213: 21300134
+    second: IndoorsApartment_01_67
+  - first:
+      213: 21300136
+    second: IndoorsApartment_01_68
+  - first:
+      213: 21300138
+    second: IndoorsApartment_01_69
+  - first:
+      213: 21300140
+    second: IndoorsApartment_01_70
+  - first:
+      213: 21300142
+    second: IndoorsApartment_01_71
+  - first:
+      213: 21300144
+    second: IndoorsApartment_01_72
+  - first:
+      213: 21300146
+    second: IndoorsApartment_01_73
+  - first:
+      213: 21300148
+    second: IndoorsApartment_01_74
+  - first:
+      213: 21300150
+    second: IndoorsApartment_01_75
+  - first:
+      213: 21300152
+    second: IndoorsApartment_01_76
+  - first:
+      213: 21300154
+    second: IndoorsApartment_01_77
+  - first:
+      213: 21300156
+    second: IndoorsApartment_01_78
+  - first:
+      213: 21300158
+    second: IndoorsApartment_01_79
+  - first:
+      213: 21300160
+    second: IndoorsApartment_01_80
+  - first:
+      213: 21300162
+    second: IndoorsApartment_01_81
+  - first:
+      213: 21300164
+    second: IndoorsApartment_01_82
+  - first:
+      213: 21300166
+    second: IndoorsApartment_01_83
+  - first:
+      213: 21300168
+    second: IndoorsApartment_01_84
+  - first:
+      213: 21300170
+    second: IndoorsApartment_01_85
+  - first:
+      213: 21300172
+    second: IndoorsApartment_01_86
+  - first:
+      213: 21300174
+    second: IndoorsApartment_01_87
+  - first:
+      213: 21300176
+    second: IndoorsApartment_01_88
+  - first:
+      213: 21300178
+    second: IndoorsApartment_01_89
+  - first:
+      213: 21300180
+    second: IndoorsApartment_01_90
+  - first:
+      213: 21300182
+    second: IndoorsApartment_01_91
+  - first:
+      213: 21300184
+    second: IndoorsApartment_01_92
+  - first:
+      213: 21300186
+    second: IndoorsApartment_01_93
+  - first:
+      213: 21300188
+    second: IndoorsApartment_01_94
+  - first:
+      213: 21300190
+    second: IndoorsApartment_01_95
+  - first:
+      213: 21300192
+    second: IndoorsApartment_01_96
+  - first:
+      213: 21300194
+    second: IndoorsApartment_01_97
+  - first:
+      213: 21300196
+    second: IndoorsApartment_01_98
+  - first:
+      213: 21300198
+    second: IndoorsApartment_01_99
+  - first:
+      213: 21300200
+    second: IndoorsApartment_01_100
+  - first:
+      213: 21300202
+    second: IndoorsApartment_01_101
+  - first:
+      213: 21300204
+    second: IndoorsApartment_01_102
+  - first:
+      213: 21300206
+    second: IndoorsApartment_01_103
+  - first:
+      213: 1134493899469358486
+    second: IndoorsApartment_01_98
+  - first:
+      213: 1717294679361294887
+    second: IndoorsApartment_01_99
+  - first:
+      213: -1387714362098634412
+    second: IndoorsApartment_01_100
+  - first:
+      213: -8947561093447577193
+    second: IndoorsApartment_01_101
+  - first:
+      213: 6435470922130046736
+    second: IndoorsApartment_01_102
+  - first:
+      213: 5893433857520095509
+    second: IndoorsApartment_01_103
+  - first:
+      213: 8651260736968914257
+    second: IndoorsApartment_01_104
+  - first:
+      213: -7866559746415666987
+    second: IndoorsApartment_01_105
+  - first:
+      213: -3283710657665648286
+    second: IndoorsApartment_01_106
+  - first:
+      213: -4769664982718296626
+    second: IndoorsApartment_01_107
+  - first:
+      213: 3437276206008715638
+    second: IndoorsApartment_01_108
+  - first:
+      213: -8630551267269091491
+    second: IndoorsApartment_01_109
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -109,9 +368,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -121,8 +383,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -143,32 +405,55 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -181,13 +466,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 920dbf55bac9ef64f94e2f8797074b20
+      spriteID: 144c02ef854a4554fb5580c1ca1c8950
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -201,13 +488,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f63b8874660b8ff4bb04f5994b14b827
+      spriteID: 1a1cf6ac6a99ac644bf46bf91264f23e
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -221,13 +510,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84475cc1d7e62924e95ef4ec56722e78
+      spriteID: 8ed5a65a60f4dbf4aafa7eb25060f016
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -241,13 +532,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3423dba7e55a15548918960531872f82
+      spriteID: 4b1b8b4d6d0d09e43a5d8a99ed31c397
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -261,13 +554,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a50935c8d8a534b82b559b78ba2649
+      spriteID: 36e3941287a03144cb6b672a669d2f77
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -281,13 +576,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16957eda163cd0944afcec895c4cd542
+      spriteID: 600243d0da442c748932318e015fce30
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -301,13 +598,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb040cb63bc2ce468473bb1e2893e12
+      spriteID: 74d9512188ef15f40a1584302d32df50
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -321,13 +620,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4ac4a9850b26b4489e55dc4d711d96
+      spriteID: e0ffe3ad8bee7cd41aa390302ea6b83d
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -341,13 +642,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75e8693db729a8e4eb55b26a03575e3e
+      spriteID: 2f919fb42ee3fd14e9a97b1cc54d8998
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -361,13 +664,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dc17bdb7abc4004d8cf0d49bbe9cec7
+      spriteID: b2c3267c7ed2c5449be86e430a1160af
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -381,13 +686,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dade598bb9895945a0f3cb1cc6e63fb
+      spriteID: 4fc2f9b9eec9c5046838363da8c056a6
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -401,13 +708,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf55b0a76ce8f64da4afa09580016de
+      spriteID: 74c8a2143593b7e46ad8b0433574c062
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -421,13 +730,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77c13739847ba343a37e1513a0b7a30
+      spriteID: 049eb1fc4e2cd79429bb25909b1acc8a
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -441,13 +752,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d37ff6224f362d6408b90c607553a435
+      spriteID: addf63a350a84c641a87c00aa2f4440a
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -461,13 +774,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9b2d93e4273c7b4abdba154aed245e9
+      spriteID: c11b27b398d539c498f52f1dca1660d1
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -481,13 +796,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f287ecbe9fa3c24683f45174d93fbfc
+      spriteID: 5e313f6c478809f4883bbdaf3ba69ed7
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -501,13 +818,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64502e050687b4b48af28f081fdf24f0
+      spriteID: e8c53d17b2ad7b94eacf59b890bd1f54
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -521,13 +840,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8267dfd761e8fc47a2e04725a287b86
+      spriteID: bbb60e75800c9614b8c367c55807bc3f
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -541,13 +862,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d27bce7119154ea4f880d5494553647b
+      spriteID: e40446bb817c7f540b90f04c69a09bed
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -561,13 +884,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b53b80c778916504c926f4b82b843882
+      spriteID: 47661227c414aa04f9ef44c5ee8cb52f
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -581,13 +906,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0524258c4d4076d46897728799e09d0f
+      spriteID: 026674076d5b6594a9a552496ec087c6
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -601,13 +928,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c10f870674a7847428f90ab930be6595
+      spriteID: abb40ed1bd13faf4484da36303cc6509
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -621,13 +950,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a018305555fea4a977dd847f5ef14f
+      spriteID: 7d5e26c9b2a2d7c4aaa06b6a189c6593
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -641,13 +972,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147d5729ebf08b740b04f53a9c13b5b8
+      spriteID: fe39fe2b00de13045ab7f7aea94d8d51
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -661,13 +994,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46bb2007a1182694f812151c80185fbb
+      spriteID: cd8f94ee600dcbf40aa4e5395497d997
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -681,13 +1016,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7090233716463458f2dbf853936e78
+      spriteID: 4730ffc7cfb7ec549a42527710da88dc
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -701,13 +1038,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8db2e5092ed10fc43955891d3da7f1eb
+      spriteID: 84fe11a5a3b018d42a825886f5b1c22d
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -721,13 +1060,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f400c427572e88b43b1c58ce647deae9
+      spriteID: ff6acf575fe4dbe458f153c3ae21fecc
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -741,13 +1082,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552716a0bec98c74c844460c6157b3a2
+      spriteID: fcb64958ad7b72f4aa4d7fe838e6671a
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -761,13 +1104,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeeb2a118ee26f943b1e6c2c03f6453d
+      spriteID: fc30664f44f363641b27ee8f05740493
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -781,13 +1126,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 178d80dac4d386342b88a42b454e8d33
+      spriteID: 6b66c12dacb7a974db76fd9e6e7d7509
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -801,13 +1148,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4521aee2fd22ad84eb5da7c1989f2c5c
+      spriteID: 9db2a7782e9635d4ea92eef43f782786
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []
@@ -821,13 +1170,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd9d7f33322505b44838c3216253dce9
+      spriteID: e29b99430b6a16544b8a5d89818b01c4
+      internalID: 21300064
       vertices: []
       indices: 
       edges: []
@@ -841,13 +1192,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 503109bedeb250941927d2d4b6a882aa
+      spriteID: da8bd36deb5ff4642bdd75313e225c2f
+      internalID: 21300066
       vertices: []
       indices: 
       edges: []
@@ -861,13 +1214,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d50aaf3f71520e148814d91ecad57fc8
+      spriteID: 80f42031c9bb9be4d804ee08fbb1e25c
+      internalID: 21300068
       vertices: []
       indices: 
       edges: []
@@ -881,13 +1236,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dbf66633f62bf148a30a3b50f479636
+      spriteID: b55eeebdc78ba614382a9a9fc3c7cc56
+      internalID: 21300070
       vertices: []
       indices: 
       edges: []
@@ -901,13 +1258,15 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5726c35a561161b449926257f23522bd
+      spriteID: d701b616c9dd0b24d8f182e1e19f5dc8
+      internalID: 21300072
       vertices: []
       indices: 
       edges: []
@@ -916,18 +1275,20 @@ TextureImporter:
       name: IndoorsApartment_01_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 176
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd4036e2334ec974aa0787253879c4ea
+      spriteID: b816e2f467946fd4db80791fa78503ec
+      internalID: 21300074
       vertices: []
       indices: 
       edges: []
@@ -936,18 +1297,20 @@ TextureImporter:
       name: IndoorsApartment_01_38
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf73ea2717252b740a0896e94cb4a196
+      spriteID: c1d9a34e9b069de488bb4d6c293f2b67
+      internalID: 21300076
       vertices: []
       indices: 
       edges: []
@@ -956,18 +1319,20 @@ TextureImporter:
       name: IndoorsApartment_01_39
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 208
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fbc0342104770f4f87451ec3dd1f505
+      spriteID: 6a805e13acccdd441822b7d3bfd7e708
+      internalID: 21300078
       vertices: []
       indices: 
       edges: []
@@ -976,18 +1341,20 @@ TextureImporter:
       name: IndoorsApartment_01_40
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c42981061decc614184a049800ea8969
+      spriteID: b0613eaaeae60634bb4047fa0276e531
+      internalID: 21300080
       vertices: []
       indices: 
       edges: []
@@ -996,18 +1363,20 @@ TextureImporter:
       name: IndoorsApartment_01_41
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b6c618bc1e4a445bbd218491dd0e98
+      spriteID: a3db52454cacf39408523d4b81446d1d
+      internalID: 21300082
       vertices: []
       indices: 
       edges: []
@@ -1016,18 +1385,20 @@ TextureImporter:
       name: IndoorsApartment_01_42
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e8d55cf84789549b988a62c3258dcf
+      spriteID: 4708bfdc086823f4c9fa1e2be1d5e72e
+      internalID: 21300084
       vertices: []
       indices: 
       edges: []
@@ -1036,18 +1407,20 @@ TextureImporter:
       name: IndoorsApartment_01_43
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f224a36f025217c4aa074bcdead9862c
+      spriteID: 800ccf93879197d42b6c6e501201312d
+      internalID: 21300086
       vertices: []
       indices: 
       edges: []
@@ -1056,18 +1429,20 @@ TextureImporter:
       name: IndoorsApartment_01_44
       rect:
         serializedVersion: 2
-        x: 112
+        x: 64
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7baeed31eb9db4fb1f0d3a599f0ef3
+      spriteID: 34ebc2d1a8d0e6c4e855d5739a21f1cc
+      internalID: 21300088
       vertices: []
       indices: 
       edges: []
@@ -1076,18 +1451,20 @@ TextureImporter:
       name: IndoorsApartment_01_45
       rect:
         serializedVersion: 2
-        x: 128
+        x: 80
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6d9048037883bd49ad2bd8ec8ac7a04
+      spriteID: f76dd8d281e492d49bf026c58a7f7422
+      internalID: 21300090
       vertices: []
       indices: 
       edges: []
@@ -1096,18 +1473,20 @@ TextureImporter:
       name: IndoorsApartment_01_46
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd9179069b34fb47a8c4c06b79c3012
+      spriteID: 8da74e01db074164bb4125efcb0b02d8
+      internalID: 21300092
       vertices: []
       indices: 
       edges: []
@@ -1116,18 +1495,20 @@ TextureImporter:
       name: IndoorsApartment_01_47
       rect:
         serializedVersion: 2
-        x: 160
+        x: 112
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 593c49b903b04eb479503972cc8a069f
+      spriteID: e194a4e1c8359514e8e80030efb42b62
+      internalID: 21300094
       vertices: []
       indices: 
       edges: []
@@ -1136,18 +1517,20 @@ TextureImporter:
       name: IndoorsApartment_01_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 128
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537f100a3154e9e438b1d60d560f89a7
+      spriteID: 7ff7cb37f27df9f469ba42e4009ceccb
+      internalID: 21300096
       vertices: []
       indices: 
       edges: []
@@ -1156,18 +1539,20 @@ TextureImporter:
       name: IndoorsApartment_01_49
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 144
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e82b521d9f0212c4d84cbf3f61641625
+      spriteID: 3640acc1584a6404ba9dc7310d17f098
+      internalID: 21300098
       vertices: []
       indices: 
       edges: []
@@ -1176,18 +1561,20 @@ TextureImporter:
       name: IndoorsApartment_01_50
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 160
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2943cff92711464a850a7c67fd9fd14
+      spriteID: e3baeb590f0884448be15cb5232ddd5a
+      internalID: 21300100
       vertices: []
       indices: 
       edges: []
@@ -1196,18 +1583,20 @@ TextureImporter:
       name: IndoorsApartment_01_51
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0d1caf77ec224d439a015d62bfb9ae4
+      spriteID: fd2ba26fe9002ed4982865885993cc98
+      internalID: 21300102
       vertices: []
       indices: 
       edges: []
@@ -1216,18 +1605,20 @@ TextureImporter:
       name: IndoorsApartment_01_52
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 192
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2a95615ac3de0744b196713f726aea6
+      spriteID: d3e2e5ae9026378419d34c6056d59b7c
+      internalID: 21300104
       vertices: []
       indices: 
       edges: []
@@ -1236,18 +1627,20 @@ TextureImporter:
       name: IndoorsApartment_01_53
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 208
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1fb4dc29c5d34e45a8c1212d3eab910
+      spriteID: 8421acb640a04f342a8306029582f2fa
+      internalID: 21300106
       vertices: []
       indices: 
       edges: []
@@ -1256,18 +1649,20 @@ TextureImporter:
       name: IndoorsApartment_01_54
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f3d949bae2e044bb8002a00d33c7cd
+      spriteID: 735457e22d5862d4ca435da5b50f3574
+      internalID: 21300108
       vertices: []
       indices: 
       edges: []
@@ -1276,18 +1671,20 @@ TextureImporter:
       name: IndoorsApartment_01_55
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f709fe214ac6b13428acac5882a68625
+      spriteID: 8b32535e5eab6084295ae98813a9e880
+      internalID: 21300110
       vertices: []
       indices: 
       edges: []
@@ -1296,18 +1693,20 @@ TextureImporter:
       name: IndoorsApartment_01_56
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 963bdb106a813854284c140110b814ca
+      spriteID: 103c1139ad463d04d804a1e2565b09a6
+      internalID: 21300112
       vertices: []
       indices: 
       edges: []
@@ -1316,18 +1715,20 @@ TextureImporter:
       name: IndoorsApartment_01_57
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38e60b0d642838741a8f88e8bebd972b
+      spriteID: db835a5befa15fc4e8e3bda524496456
+      internalID: 21300114
       vertices: []
       indices: 
       edges: []
@@ -1336,18 +1737,20 @@ TextureImporter:
       name: IndoorsApartment_01_58
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7d693d7011d9c0459e58a6eb1fa9033
+      spriteID: bb9316ae7f11ae64591ac6f4e1984077
+      internalID: 21300116
       vertices: []
       indices: 
       edges: []
@@ -1356,18 +1759,20 @@ TextureImporter:
       name: IndoorsApartment_01_59
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 851a5c9b02631cb41a2263e0f10b2cb6
+      spriteID: 13ca8fe84bf6086468996890a2e19b39
+      internalID: 21300118
       vertices: []
       indices: 
       edges: []
@@ -1376,18 +1781,20 @@ TextureImporter:
       name: IndoorsApartment_01_60
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 96
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c2ddac85fd7bcb48ad7ae406743f318
+      spriteID: 2b9d7d29482adc94089c6b8445ea9066
+      internalID: 21300120
       vertices: []
       indices: 
       edges: []
@@ -1396,18 +1803,20 @@ TextureImporter:
       name: IndoorsApartment_01_61
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 112
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cd6aa4d0aabe634bbeb9c72b0d8c4c2
+      spriteID: 74a1feb5230db7c49b33f5d09d5c1ee1
+      internalID: 21300122
       vertices: []
       indices: 
       edges: []
@@ -1416,18 +1825,20 @@ TextureImporter:
       name: IndoorsApartment_01_62
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 128
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e0eb4fd6fe31184cb2447580e4f34eb
+      spriteID: 37ac3c567d3799c4f96ec8e25abb44ab
+      internalID: 21300124
       vertices: []
       indices: 
       edges: []
@@ -1436,18 +1847,20 @@ TextureImporter:
       name: IndoorsApartment_01_63
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 144
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c60f34aebc98c43b6ab761036af888
+      spriteID: b2a0c4690ac53da4e9b4f88b0e4a83fa
+      internalID: 21300126
       vertices: []
       indices: 
       edges: []
@@ -1456,18 +1869,20 @@ TextureImporter:
       name: IndoorsApartment_01_64
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e45a1fa8adec94fa8f9468acdeb7bd
+      spriteID: 1b51000b982337e42bae02081d097ed3
+      internalID: 21300128
       vertices: []
       indices: 
       edges: []
@@ -1476,18 +1891,20 @@ TextureImporter:
       name: IndoorsApartment_01_65
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 176
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49a016579adfc494e8ff2de9a3e4833e
+      spriteID: 87d73beff63d7ee4e8894cb1bec28ce4
+      internalID: 21300130
       vertices: []
       indices: 
       edges: []
@@ -1496,18 +1913,20 @@ TextureImporter:
       name: IndoorsApartment_01_66
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
+        x: 192
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3331627af782734fb90cfd23347ecef
+      spriteID: 774c02b6c1d516d458aeb98e02ea9675
+      internalID: 21300132
       vertices: []
       indices: 
       edges: []
@@ -1516,18 +1935,20 @@ TextureImporter:
       name: IndoorsApartment_01_67
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
+        x: 208
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7614365277815684c9e550ae8a0a009d
+      spriteID: 21bab40623c25f54f912310dae384dbb
+      internalID: 21300134
       vertices: []
       indices: 
       edges: []
@@ -1536,18 +1957,20 @@ TextureImporter:
       name: IndoorsApartment_01_68
       rect:
         serializedVersion: 2
-        x: 144
+        x: 0
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7747043350c8f540b8d728003842919
+      spriteID: 6ed42b0f986340b42888ee703cf6f16c
+      internalID: 21300136
       vertices: []
       indices: 
       edges: []
@@ -1556,18 +1979,20 @@ TextureImporter:
       name: IndoorsApartment_01_69
       rect:
         serializedVersion: 2
-        x: 160
+        x: 16
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe23967c1548ab47aedb693caabb39a
+      spriteID: bb152a22428e6e94f95a248e1a3f5000
+      internalID: 21300138
       vertices: []
       indices: 
       edges: []
@@ -1576,18 +2001,20 @@ TextureImporter:
       name: IndoorsApartment_01_70
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6628c81bd2b0f27429146782fbc3b1dd
+      spriteID: 75fe2cbda1b08f74f91c3d9fe8cd0f61
+      internalID: 21300140
       vertices: []
       indices: 
       edges: []
@@ -1596,18 +2023,20 @@ TextureImporter:
       name: IndoorsApartment_01_71
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887f263e8ffdc134b8f885b726831a69
+      spriteID: 5cd4a2dfbf05896499e759913c57d7a2
+      internalID: 21300142
       vertices: []
       indices: 
       edges: []
@@ -1616,18 +2045,20 @@ TextureImporter:
       name: IndoorsApartment_01_72
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 64
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e94596d08743f54ab5311ea95d89f7f
+      spriteID: 4e3d75e93681c1247b365677be33f66d
+      internalID: 21300144
       vertices: []
       indices: 
       edges: []
@@ -1636,18 +2067,20 @@ TextureImporter:
       name: IndoorsApartment_01_73
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584f39a837e872443aae2416f44db9dd
+      spriteID: 7b813c45d91157e45b6ac92ba5e2f22b
+      internalID: 21300146
       vertices: []
       indices: 
       edges: []
@@ -1656,18 +2089,20 @@ TextureImporter:
       name: IndoorsApartment_01_74
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 96
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2002a7c053c334a4a97f42fcad90c6c2
+      spriteID: aed7d4eacde4f9445875393037fe76e3
+      internalID: 21300148
       vertices: []
       indices: 
       edges: []
@@ -1676,18 +2111,20 @@ TextureImporter:
       name: IndoorsApartment_01_75
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 112
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f32a10179dcc44b95a18b51bdbf691
+      spriteID: 0409795e8359881439749edfcf2146f1
+      internalID: 21300150
       vertices: []
       indices: 
       edges: []
@@ -1696,18 +2133,20 @@ TextureImporter:
       name: IndoorsApartment_01_76
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 128
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90878d64998ce8b4cabe91d7756aab7f
+      spriteID: 8902b0fad11b3484cb77a4bf99b73408
+      internalID: 21300152
       vertices: []
       indices: 
       edges: []
@@ -1716,18 +2155,20 @@ TextureImporter:
       name: IndoorsApartment_01_77
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
+        x: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3ce2ca33dac0f94ca6ffe344a8c3ea6
+      spriteID: 6ca9db49df1b6124c8a986a0772265a4
+      internalID: 21300154
       vertices: []
       indices: 
       edges: []
@@ -1736,18 +2177,20 @@ TextureImporter:
       name: IndoorsApartment_01_78
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
+        x: 160
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c8a4437adde57b4092e7e2058463c8b
+      spriteID: de3d12fc11d5f284198394cd9264c2aa
+      internalID: 21300156
       vertices: []
       indices: 
       edges: []
@@ -1756,18 +2199,20 @@ TextureImporter:
       name: IndoorsApartment_01_79
       rect:
         serializedVersion: 2
-        x: 144
+        x: 0
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2596baffa84a0ad42a6447502eb38013
+      spriteID: 85039c0f14f5ed64b8d38bca9f8c0cac
+      internalID: 21300158
       vertices: []
       indices: 
       edges: []
@@ -1776,18 +2221,20 @@ TextureImporter:
       name: IndoorsApartment_01_80
       rect:
         serializedVersion: 2
-        x: 160
+        x: 16
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d4c7bfc46eb6440a66953248874b4b
+      spriteID: 471381e503111bd458d38587a70bb006
+      internalID: 21300160
       vertices: []
       indices: 
       edges: []
@@ -1796,18 +2243,20 @@ TextureImporter:
       name: IndoorsApartment_01_81
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cc7197ff0300c4abf37d9db6589437
+      spriteID: 3e4ba1966fa507c45b664e371442c2a7
+      internalID: 21300162
       vertices: []
       indices: 
       edges: []
@@ -1816,18 +2265,20 @@ TextureImporter:
       name: IndoorsApartment_01_82
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09762ad2a33fce419fd639c3c2ca9fc
+      spriteID: 84bf933acd2f31749b76f62fbc9e8b2f
+      internalID: 21300164
       vertices: []
       indices: 
       edges: []
@@ -1836,18 +2287,20 @@ TextureImporter:
       name: IndoorsApartment_01_83
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17c884a0acd1ad84dae6a635d65de306
+      spriteID: b54a0d625e2976142a9e9c1ccdd5fe8c
+      internalID: 21300166
       vertices: []
       indices: 
       edges: []
@@ -1856,18 +2309,20 @@ TextureImporter:
       name: IndoorsApartment_01_84
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a4f5588bb9fe1f43bc18848f2424291
+      spriteID: 882b474a5fc498341a2643c6faea5573
+      internalID: 21300168
       vertices: []
       indices: 
       edges: []
@@ -1876,18 +2331,20 @@ TextureImporter:
       name: IndoorsApartment_01_85
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f92099168fcd4a48b40bffdb5c94811
+      spriteID: de6f76bded19c6542b0d141b8ad4e5cd
+      internalID: 21300170
       vertices: []
       indices: 
       edges: []
@@ -1896,18 +2353,20 @@ TextureImporter:
       name: IndoorsApartment_01_86
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
+        x: 112
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a62afeb5c23a34408df5488826c9d66
+      spriteID: 4786ffdf87fbe9f4fb6ff02316b3243d
+      internalID: 21300172
       vertices: []
       indices: 
       edges: []
@@ -1916,18 +2375,20 @@ TextureImporter:
       name: IndoorsApartment_01_87
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: befb3db348196834ea4ec05a35af1909
+      spriteID: b894cf4e5d2883243a779978009d9305
+      internalID: 21300174
       vertices: []
       indices: 
       edges: []
@@ -1936,33 +2397,612 @@ TextureImporter:
       name: IndoorsApartment_01_88
       rect:
         serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bc85c37fe16604abc82161ba7e41c2
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d009215ecf32914449baafa11cdd4704
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a8db58490b6b4689edaf98356b197
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_91
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3a34a0af6ce084e8ce72085e6b81c4
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b19c71d34e2e864f8c69d6506e95ab5
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834966371e916fa4a948e61b09fbd5fe
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f6672310eef394e86e99c5644100a6
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_95
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5cbff922defc74eb3668b30a15c59c
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9ab72d26e53864aa28a45bf39617c1
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_97
+      rect:
+        serializedVersion: 2
         x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2e35ab2aad288479b7217887622f21
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_98
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69508b5d0388ebf00800000000000000
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_99
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7229ff9896e05d710800000000000000
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_100
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451376dd329ddbce0800000000000000
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_101
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79193fa7790e3d380800000000000000
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_102
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fbae305b26f4950800000000000000
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_103
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511deb06edea9c150800000000000000
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_104
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155f05ecdc37f0870800000000000000
+      internalID: 8651260736968914257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8d186e69d54d290800000000000000
+      internalID: -7866559746415666987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_106
+      rect:
+        serializedVersion: 2
+        x: 128
         y: 0
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f0fd55e0aebb5d458a551bf69a749d0
+      spriteID: 269bca00e8aed62d0800000000000000
+      internalID: -3283710657665648286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdc47f08febecdb0800000000000000
+      internalID: -4769664982718296626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_108
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6794d067f78a3bf20800000000000000
+      internalID: 3437276206008715638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndoorsApartment_01_109
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fd0aa595f1a3880800000000000000
+      internalID: -8630551267269091491
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 08167ecfa97d8a741aed3087031d86fa
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-  spritePackingTag: 
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IndoorsApartment_01_0: 21300000
+      IndoorsApartment_01_1: 21300002
+      IndoorsApartment_01_10: 21300020
+      IndoorsApartment_01_100: 21300200
+      IndoorsApartment_01_101: 21300202
+      IndoorsApartment_01_102: 21300204
+      IndoorsApartment_01_103: 21300206
+      IndoorsApartment_01_104: 8651260736968914257
+      IndoorsApartment_01_105: -7866559746415666987
+      IndoorsApartment_01_106: -3283710657665648286
+      IndoorsApartment_01_107: -4769664982718296626
+      IndoorsApartment_01_108: 3437276206008715638
+      IndoorsApartment_01_109: -8630551267269091491
+      IndoorsApartment_01_11: 21300022
+      IndoorsApartment_01_12: 21300024
+      IndoorsApartment_01_13: 21300026
+      IndoorsApartment_01_14: 21300028
+      IndoorsApartment_01_15: 21300030
+      IndoorsApartment_01_16: 21300032
+      IndoorsApartment_01_17: 21300034
+      IndoorsApartment_01_18: 21300036
+      IndoorsApartment_01_19: 21300038
+      IndoorsApartment_01_2: 21300004
+      IndoorsApartment_01_20: 21300040
+      IndoorsApartment_01_21: 21300042
+      IndoorsApartment_01_22: 21300044
+      IndoorsApartment_01_23: 21300046
+      IndoorsApartment_01_24: 21300048
+      IndoorsApartment_01_25: 21300050
+      IndoorsApartment_01_26: 21300052
+      IndoorsApartment_01_27: 21300054
+      IndoorsApartment_01_28: 21300056
+      IndoorsApartment_01_29: 21300058
+      IndoorsApartment_01_3: 21300006
+      IndoorsApartment_01_30: 21300060
+      IndoorsApartment_01_31: 21300062
+      IndoorsApartment_01_32: 21300064
+      IndoorsApartment_01_33: 21300066
+      IndoorsApartment_01_34: 21300068
+      IndoorsApartment_01_35: 21300070
+      IndoorsApartment_01_36: 21300072
+      IndoorsApartment_01_37: 21300074
+      IndoorsApartment_01_38: 21300076
+      IndoorsApartment_01_39: 21300078
+      IndoorsApartment_01_4: 21300008
+      IndoorsApartment_01_40: 21300080
+      IndoorsApartment_01_41: 21300082
+      IndoorsApartment_01_42: 21300084
+      IndoorsApartment_01_43: 21300086
+      IndoorsApartment_01_44: 21300088
+      IndoorsApartment_01_45: 21300090
+      IndoorsApartment_01_46: 21300092
+      IndoorsApartment_01_47: 21300094
+      IndoorsApartment_01_48: 21300096
+      IndoorsApartment_01_49: 21300098
+      IndoorsApartment_01_5: 21300010
+      IndoorsApartment_01_50: 21300100
+      IndoorsApartment_01_51: 21300102
+      IndoorsApartment_01_52: 21300104
+      IndoorsApartment_01_53: 21300106
+      IndoorsApartment_01_54: 21300108
+      IndoorsApartment_01_55: 21300110
+      IndoorsApartment_01_56: 21300112
+      IndoorsApartment_01_57: 21300114
+      IndoorsApartment_01_58: 21300116
+      IndoorsApartment_01_59: 21300118
+      IndoorsApartment_01_6: 21300012
+      IndoorsApartment_01_60: 21300120
+      IndoorsApartment_01_61: 21300122
+      IndoorsApartment_01_62: 21300124
+      IndoorsApartment_01_63: 21300126
+      IndoorsApartment_01_64: 21300128
+      IndoorsApartment_01_65: 21300130
+      IndoorsApartment_01_66: 21300132
+      IndoorsApartment_01_67: 21300134
+      IndoorsApartment_01_68: 21300136
+      IndoorsApartment_01_69: 21300138
+      IndoorsApartment_01_7: 21300014
+      IndoorsApartment_01_70: 21300140
+      IndoorsApartment_01_71: 21300142
+      IndoorsApartment_01_72: 21300144
+      IndoorsApartment_01_73: 21300146
+      IndoorsApartment_01_74: 21300148
+      IndoorsApartment_01_75: 21300150
+      IndoorsApartment_01_76: 21300152
+      IndoorsApartment_01_77: 21300154
+      IndoorsApartment_01_78: 21300156
+      IndoorsApartment_01_79: 21300158
+      IndoorsApartment_01_8: 21300016
+      IndoorsApartment_01_80: 21300160
+      IndoorsApartment_01_81: 21300162
+      IndoorsApartment_01_82: 21300164
+      IndoorsApartment_01_83: 21300166
+      IndoorsApartment_01_84: 21300168
+      IndoorsApartment_01_85: 21300170
+      IndoorsApartment_01_86: 21300172
+      IndoorsApartment_01_87: 21300174
+      IndoorsApartment_01_88: 21300176
+      IndoorsApartment_01_89: 21300178
+      IndoorsApartment_01_9: 21300018
+      IndoorsApartment_01_90: 21300180
+      IndoorsApartment_01_91: 21300182
+      IndoorsApartment_01_92: 21300184
+      IndoorsApartment_01_93: 21300186
+      IndoorsApartment_01_94: 21300188
+      IndoorsApartment_01_95: 21300190
+      IndoorsApartment_01_96: 21300192
+      IndoorsApartment_01_97: 21300194
+      IndoorsApartment_01_98: 21300196
+      IndoorsApartment_01_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

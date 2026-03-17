@@ -1,26 +1,45 @@
-﻿using Assets.Scripts.Enums;
+﻿using Assets.Scripts.Components.Items;
+using Assets.Scripts.Enums;
+using System.Collections;
+using UnityEngine;
 
 namespace Assets.Scripts.Components
 {
+    [RequireComponent(typeof(CharacterComponent))]
     public class NpcComponent : InteractableComponent
     {
-        public Item m_RequiredFetchItem;
+        [SerializeField] private ItemComponent _requiredFetchItem;
 
-        public override void OnInteract(PlayerComponent player, InventoryComponent inventory)
+        public override void OnInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter)
         {
-            if (Dialog != "") { player.AwaitDialog(Dialog, DialogAwaitType.Acknowledge); }
+            this.item = GetComponentInChildren<ItemComponent>();
+            StartCoroutine(IInteract(player, playerCharacter));
+        }
 
-            if (Item != null)
+        private IEnumerator IInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter)
+        {
+            if (_dialog != string.Empty)
             {
-                Item = inventory.AddContents(Item);
+                player.AwaitDialog(_dialog, DialogAwaitType.Acknowledge, InputType.Character);
+                yield return player.DialogCoroutine;
+            }
 
-                if (Item == null)
+            if (this.item != null)
+            {
+                var key = this.item.GetComponent<KeyComponent>();
+                if (!(key is null))
                 {
-                    AudioManager.Instance.m_AudioSource.PlayOneShot(AudioManager.Instance.m_ItemGetSoundEffect, 0.1f);
+                    yield return playerCharacter.KeyChain.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
                 }
                 else
                 {
-                    player.AwaitDialog($"You already have a { Item.name }!\nCannot carry more.", DialogAwaitType.Acknowledge);
+                    yield return playerCharacter.Inventory.IAddItem(this.item, player, (ItemComponent item) => { this.item = item; });
+                }
+
+                if (this.item != null)
+                {
+                    player.AwaitDialog($"You already have a { this.item.name }!\nCannot carry more.", DialogAwaitType.Acknowledge, InputType.Character);
+                    yield return player.DialogCoroutine;
                 }
             }
         }

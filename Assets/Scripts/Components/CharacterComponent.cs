@@ -1,5 +1,7 @@
-﻿using Assets.Scripts.Helpers;
+﻿using Assets.Scripts.Enums;
+using Assets.Scripts.Helpers;
 using Assets.Scripts.Managers;
+using Assets.Scripts.Models;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,84 +9,117 @@ using UnityEngine.UI;
 
 public class CharacterComponent : MonoBehaviour
 {
+    // Debugging
     public Text _queueText = null;
 
     // View
-    public Animator _animator;
-    public Collider2D _collider;
+    [SerializeField] protected Animator _animator;
+    [SerializeField] protected Collider2D _collider;
     public Rigidbody2D _rigidbody;
     public SpriteRenderer _spriteRenderer;
 
     public Vector2 _facing;
-    public float _rotation;
-    public float _moveSpeed;
-    public float _moveSpeedMultiplier;
+    [SerializeField] private float _rotation;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] protected float moveSpeedMultiplier;
 
+    public FactionsEnum _faction;
     public bool _invincible;
+    public int _maxHealth;
     public int _health;
     public int _defense;
 
-    public List<InputDirection> _inputs;
-    public Vector2 _curDir = Vector2.zero;
+
+    private List<DirectionEnum> inputs;
+    private Vector2 currentDirection = Vector2.zero;
 
     // Model
-    public bool _controlLoss = false;
+    protected bool controlLoss = false;
 
-    public void Move(Vector2 inputs)
+    public Collider2D Collider { get => _collider; }
+    public bool ControlLoss { get => this.controlLoss; }
+    public Vector2 CurrentDirection { get => this.currentDirection; }
+    public Vector2 Facing { get => _facing; }
+    public FactionsEnum Faction { get => _faction; }
+    public List<DirectionEnum> Inputs { get => this.inputs; }
+    public bool Invincible { get => _invincible; }
+    public float MoveSpeedMultiplier { get => this.moveSpeedMultiplier; }
+    public float Rotation { get => _rotation; }
+
+    public void InputMove(Vector2 newInputs)
     {
-        if (inputs.x != _curDir.x)
+        this.inputs ??= new List<DirectionEnum>();
+
+        if (newInputs.x != this.currentDirection.x)
         {
-            if (_curDir.x < 0) { _inputs.Remove(InputDirection.LEFT); }
-            if (_curDir.x > 0) { _inputs.Remove(InputDirection.RIGHT); }
+            if (this.currentDirection.x < 0) { this.inputs.Remove(DirectionEnum.LEFT); }
+            if (this.currentDirection.x > 0) { this.inputs.Remove(DirectionEnum.RIGHT); }
 
-            _curDir.x = inputs.x;
+            this.currentDirection.x = newInputs.x;
 
-            if (_curDir.x < 0) { _inputs.Add(InputDirection.LEFT); }
-            if (_curDir.x > 0) { _inputs.Add(InputDirection.RIGHT); }
+            if (this.currentDirection.x < 0) { this.inputs.Add(DirectionEnum.LEFT); }
+            if (this.currentDirection.x > 0) { this.inputs.Add(DirectionEnum.RIGHT); }
         }
 
-        if (inputs.y != _curDir.y)
+        if (newInputs.y != this.currentDirection.y)
         {
-            if (_curDir.y < 0) { _inputs.Remove(InputDirection.DOWN); }
-            if (_curDir.y > 0) { _inputs.Remove(InputDirection.UP); }
+            if (this.currentDirection.y < 0) { this.inputs.Remove(DirectionEnum.DOWN); }
+            if (this.currentDirection.y > 0) { this.inputs.Remove(DirectionEnum.UP); }
 
-            _curDir.y = inputs.y;
+            this.currentDirection.y = newInputs.y;
 
-            if (_curDir.y < 0) { _inputs.Add(InputDirection.DOWN); }
-            if (_curDir.y > 0) { _inputs.Add(InputDirection.UP); }
-        }
-
-        if (_inputs.Count > 0) { UpdateFacing(_inputs[0]); }
-
-        if (!_controlLoss)
-        {
-            if (inputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
-            if (inputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
-
-            _rigidbody.velocity = inputs.normalized * _moveSpeed * _moveSpeedMultiplier;
+            if (this.currentDirection.y < 0) { this.inputs.Add(DirectionEnum.DOWN); }
+            if (this.currentDirection.y > 0) { this.inputs.Add(DirectionEnum.UP); }
         }
 
         // Debug
-        if (_queueText != null) { UpdateQueueText(); }
-    }
+        if (_queueText != null) UpdateQueueText();
 
-    public virtual void TakeDamage(int damage)
-    {
-        if (!_invincible)
+        if (!this.controlLoss)
         {
-            int trueDamage = (damage - _defense >= GameManager.Instance.m_MinimumDamage) ? damage - _defense : GameManager.Instance.m_MinimumDamage;
-            _health = (_health - trueDamage >= 0) ? _health - trueDamage : 0;
-            InvincibilityFrames();            
-
-            if (_health <= 0 && !_animator.GetBool("dead"))
-            {
-                _animator.SetBool("dead", true);
-                Die();
-            }
+            if (this.inputs.Count > 0) UpdateFacing(this.inputs[0]);
+            Move(newInputs);
         }
     }
 
-    public void UpdateFacing(InputDirection direction)
+    public void Move(Vector2 newInputs) => Move(newInputs, this.moveSpeedMultiplier);
+
+    public void Move(Vector2 newInputs, float moveSpeedMultiplier)
+    {
+        if (newInputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
+        if (newInputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
+
+        _rigidbody.linearVelocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
+    }
+
+    public virtual void RestoreHealth(int value) => _health += (_health + value > _maxHealth) ? 0 : value;
+
+    private int CalculateTrueDamage(int damage) => (damage - _defense > 0) ? damage - _defense : 1;
+
+    private void TakeDamage(int trueDamage) => _health = (_health - trueDamage >= 0) ? _health - trueDamage : 0;
+
+    private void CheckForDeath()
+    {
+        if (_health <= 0 && !_animator.GetBool("dead"))
+        {
+            Debug.Log($"Health: {_health}");
+            _animator.SetBool("dead", true);
+            Die();
+        }
+    }
+
+    public virtual void ReceiveAttack(AttackModel attack)
+    {
+        if (!_invincible)
+        {
+            InvincibilityFrames();
+            TakeDamage(CalculateTrueDamage(attack.Damage));
+            Knockback(attack.KnockbackDirection, attack.KnockbackForce);
+            CheckForDeath();
+        }
+    }
+
+    public void UpdateFacing(DirectionEnum direction)
     {
         _facing = CharacterHelper.GetFacing(direction);
         _rotation = CharacterHelper.GetRotation(direction);
@@ -96,18 +131,21 @@ public class CharacterComponent : MonoBehaviour
     public void UpdateQueueText()
     {
         _queueText.text = "";
-        foreach (InputDirection input in _inputs) { _queueText.text += input.ToString() + "\n"; }
+        foreach (DirectionEnum input in this.inputs) { _queueText.text += input.ToString() + "\n"; }
     }
 
-    private void InvincibilityFrames() => StartCoroutine(IInvincibilityFrames());
+    private void InvincibilityFrames()
+    {
+        _invincible = true;
+        StartCoroutine(IInvincibilityFrames());
+    }
 
     private IEnumerator IInvincibilityFrames()
     {
-        _invincible = true;
         float _time = 0f;
         int _i = 1;
 
-        while (_time < GameManager.Instance.m_IFramesDuration)
+        while (_time < GameManager.Instance.IFramesDuration)
         {
             _spriteRenderer.enabled = _i > GameManager.Instance.m_IFrameFlickerRate ? true : false;
             if (_i < (11 - GameManager.Instance.m_IFrameFlickerRate) * 2) { ++_i; } else { _i = 1; }
@@ -121,12 +159,12 @@ public class CharacterComponent : MonoBehaviour
 
     public void Knockback(Vector2 direction, float force) => StartCoroutine(IKnockback(direction, force));
 
-    IEnumerator IKnockback(Vector2 direction, float force)
+    private IEnumerator IKnockback(Vector2 direction, float force)
     {
-        _controlLoss = true;
-        _rigidbody.velocity = direction * force;
+        this.controlLoss = true;
+        _rigidbody.linearVelocity = direction * force;
         yield return new WaitForSeconds(0.1f);
-        _controlLoss = false;
+        this.controlLoss = false;
     }
 
     private void Die() => StartCoroutine(IDie());
@@ -137,4 +175,24 @@ public class CharacterComponent : MonoBehaviour
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
     }
+
+    public virtual void SetControlLoss(float duration) => StartCoroutine(IControlLoss(duration));
+
+    public virtual void SetControlLoss(bool value) => this.controlLoss = value;
+
+    public IEnumerator IControlLoss(float duration)
+    {
+        this.controlLoss = true;
+        yield return new WaitForSeconds(duration);
+        this.controlLoss = false;
+    }
+
+    public IEnumerator IControlLoss(Coroutine coroutine)
+    {
+        this.controlLoss = true;
+        yield return coroutine;
+        this.controlLoss = false;
+    }
+
+    public void SetMoveSpeedMultiplier(float value) => this.moveSpeedMultiplier = value;
 }

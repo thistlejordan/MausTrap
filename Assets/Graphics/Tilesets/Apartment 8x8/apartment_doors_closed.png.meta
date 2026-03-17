@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 89606f41e66b3994abeb8d85a1cae235
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7133147477744230371
+    second: apartment_doors_closed_0
+  - first:
+      213: 3071475169732125109
+    second: apartment_doors_closed_1
+  - first:
+      213: -8771505962204488622
+    second: apartment_doors_closed_2
+  - first:
+      213: 1326209673919189478
+    second: apartment_doors_closed_3
+  - first:
+      213: -4474918244907274186
+    second: apartment_doors_closed_4
+  - first:
+      213: -3333728005528927433
+    second: apartment_doors_closed_5
+  - first:
+      213: 5836502982319477948
+    second: apartment_doors_closed_6
+  - first:
+      213: -9210567964652620524
+    second: apartment_doors_closed_7
+  - first:
+      213: -7156181179661250632
+    second: apartment_doors_closed_8
+  - first:
+      213: -3321611092131191685
+    second: apartment_doors_closed_9
+  - first:
+      213: -9030592204744365240
+    second: apartment_doors_closed_10
+  - first:
+      213: 9167551762197817235
+    second: apartment_doors_closed_11
+  - first:
+      213: 725281597691063520
+    second: apartment_doors_closed_12
+  - first:
+      213: 8402090856041221573
+    second: apartment_doors_closed_13
+  - first:
+      213: 4676100107825259534
+    second: apartment_doors_closed_14
+  - first:
+      213: 2380353554853603760
+    second: apartment_doors_closed_15
+  - first:
+      213: -5663280290823237984
+    second: apartment_doors_closed_16
+  - first:
+      213: -2020285862014262222
+    second: apartment_doors_closed_17
+  - first:
+      213: 6986601655968244050
+    second: apartment_doors_closed_18
+  - first:
+      213: -1050773439449411920
+    second: apartment_doors_closed_19
+  - first:
+      213: -649252414120323016
+    second: apartment_doors_closed_20
+  - first:
+      213: -6542795623587786748
+    second: apartment_doors_closed_21
+  - first:
+      213: -7826142696869004670
+    second: apartment_doors_closed_22
+  - first:
+      213: 5013522504948014017
+    second: apartment_doors_closed_23
+  - first:
+      213: 7568790867528065605
+    second: apartment_doors_closed_24
+  - first:
+      213: 6660695269415858514
+    second: apartment_doors_closed_25
+  - first:
+      213: 3967384687131018321
+    second: apartment_doors_closed_26
+  - first:
+      213: 8553804034374603846
+    second: apartment_doors_closed_27
+  - first:
+      213: 3486219966972819139
+    second: apartment_doors_closed_28
+  - first:
+      213: -7285918793349710954
+    second: apartment_doors_closed_29
+  - first:
+      213: 5637875843872936902
+    second: apartment_doors_closed_30
+  - first:
+      213: 6757308325530033169
+    second: apartment_doors_closed_31
+  - first:
+      213: -740763470699740854
+    second: apartment_doors_closed_32
+  - first:
+      213: -8526940445127017558
+    second: apartment_doors_closed_33
+  - first:
+      213: 8775561209045567953
+    second: apartment_doors_closed_34
+  - first:
+      213: 4814715733569817936
+    second: apartment_doors_closed_35
+  - first:
+      213: -4258457617014585954
+    second: apartment_doors_closed_36
+  - first:
+      213: 7378074491000887339
+    second: apartment_doors_closed_37
+  - first:
+      213: 7281019873799589211
+    second: apartment_doors_closed_38
+  - first:
+      213: 4822146418749183543
+    second: apartment_doors_closed_39
+  - first:
+      213: 8418108934687920
+    second: apartment_doors_closed_40
+  - first:
+      213: -1470230589295969875
+    second: apartment_doors_closed_41
+  - first:
+      213: 7428866630481798662
+    second: apartment_doors_closed_42
+  - first:
+      213: -5812570676887732047
+    second: apartment_doors_closed_43
+  - first:
+      213: 1377805587751189101
+    second: apartment_doors_closed_44
+  - first:
+      213: -4116138665466782562
+    second: apartment_doors_closed_45
+  - first:
+      213: -4223007767951692604
+    second: apartment_doors_closed_46
+  - first:
+      213: -4942929613180188515
+    second: apartment_doors_closed_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: apartment_doors_closed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef1b6586d70ef260800000000000000
+      internalID: 7133147477744230371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apartment_doors_closed_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 44
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1e05cb46210aa20800000000000000
+      internalID: 3071475169732125109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apartment_doors_closed_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c94910dc9554680800000000000000
+      internalID: -8771505962204488622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apartment_doors_closed_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1d3affba4a76210800000000000000
+      internalID: 1326209673919189478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      apartment_doors_closed_0: 7133147477744230371
+      apartment_doors_closed_1: 3071475169732125109
+      apartment_doors_closed_2: -8771505962204488622
+      apartment_doors_closed_3: 1326209673919189478
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

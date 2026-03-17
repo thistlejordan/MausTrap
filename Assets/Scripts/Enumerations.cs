@@ -9,14 +9,6 @@
     MAX_CONDITION
 }
 
-public enum InputDirection {
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT,
-    MAX_INPUTS
-}
-
 public enum GameState {
     LOCKED,
     MENU,

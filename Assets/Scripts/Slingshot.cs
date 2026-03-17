@@ -9,6 +9,6 @@ public class Slingshot : Item {
     public override void Use() {
 
         Projectile _bulletInstance = Instantiate(m_Bullet, m_Owner.transform);
-        _bulletInstance.GetComponent<Rigidbody2D>().velocity = transform.forward * m_Speed;
+        _bulletInstance.GetComponent<Rigidbody2D>().linearVelocity = transform.forward * m_Speed;
     }
 }

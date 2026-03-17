@@ -12,7 +12,6 @@ namespace Assets.Scripts.Components
         public GameObject _dialogBox;
         public Text _dialogText;
 
-        public bool _active;
         private bool _acknowledgedFlag;
         private bool _typingFlag;
 
@@ -24,7 +23,6 @@ namespace Assets.Scripts.Components
             if (_typing != null) { StopCoroutine(_awaitAcknowledge); }
             if (_typing != null) { StopCoroutine(_typing); }
             gameObject.SetActive(true);
-            _active = true;
             TypeText(text);
             _acknowledgedFlag = false;
 
@@ -70,7 +68,6 @@ namespace Assets.Scripts.Components
         {
             while (!_acknowledgedFlag) { yield return null; }
             gameObject.SetActive(false);
-            _active = false;
         }
 
         public void AwaitTypingAndAcknowledge()
@@ -83,7 +80,6 @@ namespace Assets.Scripts.Components
         {
             while (_typingFlag || !_acknowledgedFlag) { yield return null; }
             gameObject.SetActive(false);
-            _active = false;
         }
     }
 }

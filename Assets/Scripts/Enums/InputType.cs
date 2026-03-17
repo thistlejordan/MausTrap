@@ -3,7 +3,9 @@
     public enum InputType
     {
         Character,
-        Menu,
-        Dialog
+        Dialog,
+        Inventory,
+        Map,
+        Menu
     }
 }

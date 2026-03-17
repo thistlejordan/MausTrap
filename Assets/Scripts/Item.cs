@@ -12,6 +12,7 @@ public enum ItemEffect {
     MAX_ITEMEFFECT
 }
 
+[Obsolete("Use ItemComponent instead.")]
 public class Item : MonoBehaviour {
 
     public Item() { }
@@ -22,6 +23,7 @@ public class Item : MonoBehaviour {
     public Character m_Owner;
 
     public Animator Animator { get; set; }
+    public SpriteRenderer SpriteRenderer { get; set; }
 
     public void UseItem() {
 
@@ -30,7 +32,7 @@ public class Item : MonoBehaviour {
             if(m_Quantity <= 0) {
 
                 //Abort function if we are out of the consumable item
-                if(GameManager.Instance.m_DebugMode) { Debug.Log("Out of " + name + "(s)"); }
+                if(GameManager.Instance.DebugMode) { Debug.Log("Out of " + name + "(s)"); }
                 return;
 
             } else {
@@ -60,15 +62,16 @@ public class Item : MonoBehaviour {
 
     public ItemEffect m_ItemEffect;
     public float m_Duration; // Use 0 for permenants, like arrows
-    public float m_Range; //(Also used for radius) Use -1.0f if there is no range limit (ie: bow)
-    public int m_Damage;
+    public float _range; //(Also used for radius) Use -1.0f if there is no range limit (ie: bow)
+    public int _damage;
     public float m_MoveSpeed; //For Projectiles
 
     void Awake() {
 
         Animator = GetComponent<Animator>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
         HideSprite();
-        if(gameObject.GetComponent<Pickup>()) { ShowSprite(); }
+        // if(gameObject.GetComponent<Pickup>()) { ShowSprite(); }
     }
 
     public virtual void Use() => throw new NotImplementedException();
@@ -76,11 +79,11 @@ public class Item : MonoBehaviour {
     public virtual void Use(Character character) { }
 
     public void HideSprite() {
-        GetComponent<SpriteRenderer>().enabled = false;
+        SpriteRenderer.enabled = false;
     }
 
     public void ShowSprite() {
-        GetComponent<SpriteRenderer>().enabled = true;
+        SpriteRenderer.enabled = true;
     }
 
     void ProcessProjectile() {
