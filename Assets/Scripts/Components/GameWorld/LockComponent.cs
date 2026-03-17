@@ -9,14 +9,14 @@ namespace Assets.Scripts.Components.GameWorld
         [SerializeField] private bool isLocked;
         [SerializeField] private bool requiresBigKey;
 
-        public LevelEnum Level { get => this.level; }
-        public bool IsLocked { get => this.isLocked; }
-        public bool RequiresBigKey { get => this.requiresBigKey; }
+        public LevelEnum Level => this.level;
+        public bool IsLocked => this.isLocked;
+        public bool RequiresBigKey => this.requiresBigKey;
 
         public void Unlock(KeyChainComponent keyChain)
         {
             keyChain.UseKey(this);
-            this.GetComponent<Collider2D>().enabled = false;
+            this.GetComponent<Collider2D>().isTrigger = true;
             this.isLocked = false;
         }
     }
