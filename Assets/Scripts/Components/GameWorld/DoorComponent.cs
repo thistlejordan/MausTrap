@@ -7,13 +7,32 @@ namespace Assets.Scripts.Components.GameWorld
     {
         [SerializeField] private bool isOpen;
         [SerializeField] private LockComponent @lock;
+        [SerializeField] private DoorComponent exitDoor;
+
+        private GameAreaTransitionArea transitionArea;
         private GameArea gameArea;
-        private DoorComponent exitDoor;
+
+        public bool IsOpen { get => this.isOpen; }
 
         public GameArea GameArea { get => this.gameArea; }
 
-        public bool IsOpen { get => this.isOpen; }
         public DoorComponent ExitDoor { get => this.exitDoor; }
+
+        private GameAreaTransitionArea TransitionArea
+        {
+            get
+            {
+                transitionArea = this.GetComponentInChildren<GameAreaTransitionArea>();
+
+                if (transitionArea == null)
+                {
+                    Debug.LogWarning($"{this.GameArea.name} {this.name} is missing a GameAreaTransitionArea component and will not function correctly.");
+                }
+
+                return transitionArea;
+            }
+        }
+
 
         private void Awake()
         {
@@ -21,14 +40,14 @@ namespace Assets.Scripts.Components.GameWorld
 
             if (this.ExitDoor is null)
             {
-                Debug.LogWarning($"{this.name} is missing Corresponding exit door DoorComponent and will not function correctly.");
+                Debug.LogWarning($"{this.GameArea.name} {this.name} is missing Corresponding exit door DoorComponent and will not function correctly.");
             }
         }
 
         public void Open()
         {
             if (this.isOpen) return;
-            AnimateDoorOpen();
+            this.AnimateDoorOpen();
             this.GetComponent<Collider2D>().isTrigger = true;
             this.isOpen = true;
         }
@@ -36,9 +55,14 @@ namespace Assets.Scripts.Components.GameWorld
         public void Close()
         {
             if (!this.isOpen) return;
-            AnimateDoorClose();
+            this.AnimateDoorClose();
             this.GetComponent<Collider2D>().isTrigger = false;
             this.isOpen = false;
+        }
+
+        public void Arrive()
+        {
+            this.TransitionArea.IsArriving();
         }
 
         private void AnimateDoorOpen()
@@ -57,27 +81,33 @@ namespace Assets.Scripts.Components.GameWorld
         {
             var playerCharacter = collision.collider.GetComponent<PlayerCharacterComponent>();
 
-            if (playerCharacter is null) return;
+            if (playerCharacter == null)
+            {
+                return;
+            }
 
             if (playerCharacter.KeyChain.HasKey(this.@lock) && this.@lock.IsLocked)
             {
                 this.@lock.Unlock(playerCharacter.KeyChain);
-                Open();
+                this.Open();
                 this.exitDoor.Open();
             }
         }
 
-        private IEnumerator IMovePlayerCharacter(PlayerCharacterComponent playerCharacter)
+        private IEnumerator IExitThroughDoorway(PlayerCharacterComponent playerCharacter)
         {
-            var exitGameAreaTransitionArea = this.ExitDoor.GetComponentInChildren<GameAreaTransitionArea>();
-
-            exitGameAreaTransitionArea.IsArriving();
-            StartCoroutine(TransitionCamera(playerCharacter));
+            this.ExitDoor.Arrive();
+            this.StartCoroutine(ITransitionCameraAndCharacter(playerCharacter));
             yield return playerCharacter.IControlLoss(0.5f);
-            playerCharacter.transform.position = exitGameAreaTransitionArea.transform.position;
+            this.ExitDoor.EnterThroughDoorway(playerCharacter);
         }
 
-        private IEnumerator TransitionCamera(PlayerCharacterComponent playerCharacter)
+        private void EnterThroughDoorway(PlayerCharacterComponent playerCharacter)
+        {
+            playerCharacter.transform.position = this.transform.position;
+        }
+
+        private IEnumerator ITransitionCameraAndCharacter(PlayerCharacterComponent playerCharacter)
         {
             var time = 0f;
             var duration = 0.5f;
@@ -92,10 +122,10 @@ namespace Assets.Scripts.Components.GameWorld
                 time += Time.deltaTime;
                 yield return null;
             }
-            director.SetBounds(this.GameArea.GetComponent<Collider2D>());
+            director.SetBounds(this.ExitDoor.GameArea.GetComponent<Collider2D>());
             director.FreeCamera = false;
         }
 
-        public void TeleportCharacter(PlayerCharacterComponent playerCharacter) => StartCoroutine(IMovePlayerCharacter(playerCharacter));
+        public void TransitionCharacter(PlayerCharacterComponent playerCharacter) => this.StartCoroutine(IExitThroughDoorway(playerCharacter));
     }
 }
