@@ -12,36 +12,43 @@ namespace Assets.Scripts.Components.GameWorld
         private GameAreaTransitionArea transitionArea;
         private GameArea gameArea;
 
-        public bool IsOpen { get => this.isOpen; }
+        public bool IsOpen => this.isOpen;
 
-        public GameArea GameArea { get => this.gameArea; }
+        public DoorComponent ExitDoor => this.exitDoor;
 
-        public DoorComponent ExitDoor { get => this.exitDoor; }
+        public GameArea GameArea
+        {
+            get
+            {
+                this.gameArea = this.GetComponentInParent<GameArea>();
+
+                if (this.ExitDoor == null)
+                {
+                    Debug.LogError($"{this.GameArea.name} {this.name} is missing Corresponding exit door DoorComponent.");
+                }
+
+                return this.gameArea;
+            }
+        }
 
         private GameAreaTransitionArea TransitionArea
         {
             get
             {
-                transitionArea = this.GetComponentInChildren<GameAreaTransitionArea>();
+                this.transitionArea = this.GetComponentInChildren<GameAreaTransitionArea>();
 
-                if (transitionArea == null)
+                if (this.transitionArea == null)
                 {
-                    Debug.LogWarning($"{this.GameArea.name} {this.name} is missing a GameAreaTransitionArea component and will not function correctly.");
+                    Debug.LogError($"{this.GameArea.name} {this.name} is missing a GameAreaTransitionArea component.");
                 }
 
-                return transitionArea;
+                return this.transitionArea;
             }
         }
 
 
         private void Awake()
         {
-            this.gameArea = this.GetComponentInParent<GameArea>();
-
-            if (this.ExitDoor is null)
-            {
-                Debug.LogWarning($"{this.GameArea.name} {this.name} is missing Corresponding exit door DoorComponent and will not function correctly.");
-            }
         }
 
         public void Open()

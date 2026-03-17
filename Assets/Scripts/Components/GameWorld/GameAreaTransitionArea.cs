@@ -21,9 +21,10 @@ namespace Assets.Scripts.Components.GameWorld
                 return;
             }
 
-            if (this.door is null)
+            if (this.door == null)
             {
                 Debug.LogError($"DoorComponent missing in parent of {this.name}");
+                return;
             }
 
             //// PlayerCharacter is arriving. Don't send them back immediately.
