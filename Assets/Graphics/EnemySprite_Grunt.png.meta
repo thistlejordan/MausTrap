@@ -1,0 +1,2562 @@
+fileFormatVersion: 2
+guid: 250362ebd30b87044adf80eb15568b1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: EnemySprite_Grunt_0
+  - first:
+      213: 21300002
+    second: EnemySprite_Grunt_1
+  - first:
+      213: 21300004
+    second: EnemySprite_Grunt_2
+  - first:
+      213: 21300006
+    second: EnemySprite_Grunt_3
+  - first:
+      213: 21300008
+    second: EnemySprite_Grunt_4
+  - first:
+      213: 21300010
+    second: EnemySprite_Grunt_5
+  - first:
+      213: 21300012
+    second: EnemySprite_Grunt_6
+  - first:
+      213: 21300014
+    second: EnemySprite_Grunt_7
+  - first:
+      213: 21300016
+    second: EnemySprite_Grunt_8
+  - first:
+      213: 21300018
+    second: EnemySprite_Grunt_9
+  - first:
+      213: 21300020
+    second: EnemySprite_Grunt_10
+  - first:
+      213: 21300022
+    second: EnemySprite_Grunt_11
+  - first:
+      213: 21300024
+    second: EnemySprite_Grunt_12
+  - first:
+      213: 21300026
+    second: EnemySprite_Grunt_13
+  - first:
+      213: 21300028
+    second: EnemySprite_Grunt_14
+  - first:
+      213: 21300030
+    second: EnemySprite_Grunt_15
+  - first:
+      213: 21300032
+    second: EnemySprite_Grunt_16
+  - first:
+      213: 21300034
+    second: EnemySprite_Grunt_17
+  - first:
+      213: 21300036
+    second: EnemySprite_Grunt_18
+  - first:
+      213: 21300038
+    second: EnemySprite_Grunt_19
+  - first:
+      213: 21300040
+    second: EnemySprite_Grunt_20
+  - first:
+      213: 21300042
+    second: EnemySprite_Grunt_21
+  - first:
+      213: 21300044
+    second: EnemySprite_Grunt_22
+  - first:
+      213: 21300046
+    second: EnemySprite_Grunt_23
+  - first:
+      213: 21300048
+    second: EnemySprite_Grunt_24
+  - first:
+      213: 21300050
+    second: EnemySprite_Grunt_25
+  - first:
+      213: 21300052
+    second: EnemySprite_Grunt_26
+  - first:
+      213: 21300054
+    second: EnemySprite_Grunt_27
+  - first:
+      213: 21300056
+    second: EnemySprite_Grunt_28
+  - first:
+      213: 21300058
+    second: EnemySprite_Grunt_29
+  - first:
+      213: 21300060
+    second: EnemySprite_Grunt_30
+  - first:
+      213: 21300062
+    second: EnemySprite_Grunt_31
+  - first:
+      213: 21300064
+    second: EnemySprite_Grunt_32
+  - first:
+      213: 21300066
+    second: EnemySprite_Grunt_33
+  - first:
+      213: 21300068
+    second: EnemySprite_Grunt_34
+  - first:
+      213: 21300070
+    second: EnemySprite_Grunt_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -5, y: -11}
+        - {x: -5, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 6, y: -10}
+        - {x: 7, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -15}
+        - {x: 0, y: -15}
+        - {x: 0, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -13}
+        - {x: 5, y: -13}
+        - {x: 5, y: -10}
+        - {x: 6, y: -10}
+        - {x: 6, y: -9}
+        - {x: 7, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 6, y: -10}
+        - {x: 7, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 8, y: -4}
+        - {x: 7, y: -4}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -9}
+        - {x: -6, y: -9}
+        - {x: -6, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -11}
+        - {x: -6, y: -11}
+        - {x: -6, y: -14}
+        - {x: -3, y: -14}
+        - {x: -3, y: -13}
+        - {x: -2, y: -13}
+        - {x: -2, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -13}
+        - {x: 1, y: -13}
+        - {x: 1, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -14}
+        - {x: 6, y: -14}
+        - {x: 6, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 9}
+        - {x: 2, y: 9}
+        - {x: 2, y: 10}
+        - {x: -2, y: 10}
+        - {x: -2, y: 9}
+        - {x: -4, y: 9}
+        - {x: -4, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -10}
+        - {x: 0, y: -10}
+        - {x: 0, y: -11}
+        - {x: 1, y: -11}
+        - {x: 1, y: -13}
+        - {x: 4, y: -13}
+        - {x: 4, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -9}
+        - {x: 5, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: -4}
+        - {x: 7, y: -4}
+        - {x: 7, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -2}
+        - {x: -7, y: -2}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -9}
+        - {x: -6, y: -9}
+        - {x: -6, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -13}
+        - {x: -2, y: -13}
+        - {x: -2, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -5.00589}
+        - {x: -8, y: -5}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 6, y: -10}
+        - {x: 7, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -14}
+        - {x: -5, y: -14}
+        - {x: -5, y: -15}
+        - {x: -1, y: -15}
+        - {x: -1, y: -13}
+        - {x: 0, y: -13}
+        - {x: 0, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -13}
+        - {x: 3, y: -13}
+        - {x: 3, y: -14}
+        - {x: 6, y: -14}
+        - {x: 6, y: -11}
+        - {x: 5, y: -11}
+        - {x: 5, y: -10}
+        - {x: 6, y: -10}
+        - {x: 6, y: -9}
+        - {x: 7, y: -9}
+        - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 103
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: 9}
+        - {x: -2, y: 9}
+        - {x: -2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -6}
+        - {x: -5, y: -6}
+        - {x: -5, y: -9}
+        - {x: -6, y: -9}
+        - {x: -6, y: -12}
+        - {x: -4, y: -12}
+        - {x: -4, y: -13}
+        - {x: -1, y: -13}
+        - {x: -1, y: -11}
+        - {x: 0, y: -11}
+        - {x: 0, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: -8}
+        - {x: 6, y: -8}
+        - {x: 6, y: -7}
+        - {x: 7, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -5, y: -11}
+        - {x: -5, y: -15}
+        - {x: 5, y: -15}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 6, y: -10}
+        - {x: 7, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 8, y: -5}
+        - {x: 8, y: -4}
+        - {x: 7, y: -4}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: 9}
+        - {x: -2, y: 9}
+        - {x: -2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -5}
+        - {x: -7, y: -5}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -14}
+        - {x: -1, y: -14}
+        - {x: -1, y: -11}
+        - {x: 4, y: -11}
+        - {x: 4, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: -9}
+        - {x: 7, y: -9}
+        - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -6}
+        - {x: 7, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 9}
+        - {x: 2, y: 9}
+        - {x: 2, y: 10}
+        - {x: -2, y: 10}
+        - {x: -2, y: 9}
+        - {x: -4, y: 9}
+        - {x: -4, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -3}
+        - {x: -8, y: -3}
+        - {x: -8, y: -5}
+        - {x: -7, y: -5}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -11}
+        - {x: 1, y: -11}
+        - {x: 1, y: -10}
+        - {x: 4, y: -10}
+        - {x: 4, y: -9}
+        - {x: 5, y: -9}
+        - {x: 5, y: -7}
+        - {x: 7, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -8}
+        - {x: -5, y: -8}
+        - {x: -5, y: -11}
+        - {x: -6, y: -11}
+        - {x: -6, y: -14}
+        - {x: -4, y: -14}
+        - {x: -4, y: -15}
+        - {x: -1, y: -15}
+        - {x: -1, y: -13}
+        - {x: 0, y: -13}
+        - {x: 0, y: -12}
+        - {x: 4, y: -12}
+        - {x: 4, y: -11}
+        - {x: 5, y: -11}
+        - {x: 5, y: -10}
+        - {x: 7, y: -10}
+        - {x: 7, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: -7}
+        - {x: 7, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -9}
+        - {x: -7, y: -9}
+        - {x: -7, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -14}
+        - {x: -2, y: -14}
+        - {x: -2, y: -12}
+        - {x: 4, y: -12}
+        - {x: 4, y: -11}
+        - {x: 5, y: -11}
+        - {x: 5, y: -10}
+        - {x: 7, y: -10}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_14
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 8, y: -5}
+        - {x: 8, y: -4}
+        - {x: 7, y: -4}
+        - {x: 7, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: 9}
+        - {x: -2, y: 9}
+        - {x: -2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: -5}
+        - {x: -7, y: -5}
+        - {x: -7, y: -6}
+        - {x: -8, y: -6}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -9}
+        - {x: -5, y: -9}
+        - {x: -5, y: -10}
+        - {x: -4, y: -10}
+        - {x: -4, y: -11}
+        - {x: 0, y: -11}
+        - {x: 0, y: -13}
+        - {x: 4, y: -13}
+        - {x: 4, y: -12}
+        - {x: 5, y: -12}
+        - {x: 5, y: -7}
+        - {x: 7, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -5}
+        - {x: 8, y: -5}
+        - {x: 8, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 9}
+        - {x: 2, y: 9}
+        - {x: 2, y: 10}
+        - {x: -2, y: 10}
+        - {x: -2, y: 9}
+        - {x: -4, y: 9}
+        - {x: -4, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -7}
+        - {x: -5, y: -7}
+        - {x: -5, y: -9}
+        - {x: -4, y: -9}
+        - {x: -4, y: -10}
+        - {x: -1, y: -10}
+        - {x: -1, y: -11}
+        - {x: 0, y: -11}
+        - {x: 0, y: -13}
+        - {x: 5, y: -13}
+        - {x: 5, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -9}
+        - {x: 5, y: -9}
+        - {x: 5, y: -7}
+        - {x: 7, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -6}
+        - {x: 8, y: -6}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -6}
+        - {x: -7, y: -6}
+        - {x: -7, y: -7}
+        - {x: -8, y: -7}
+        - {x: -8, y: -9}
+        - {x: -7, y: -9}
+        - {x: -7, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -14}
+        - {x: 4, y: -14}
+        - {x: 4, y: -13}
+        - {x: 5, y: -13}
+        - {x: 5, y: -8}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 69
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -3}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+        - {x: 6, y: -1}
+        - {x: 6, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: 5}
+        - {x: -6, y: 5}
+        - {x: -6, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -5}
+        - {x: -8, y: -5}
+        - {x: -8, y: -9}
+        - {x: -7, y: -9}
+        - {x: -7, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -14}
+        - {x: 5, y: -14}
+        - {x: 5, y: -10}
+        - {x: 7, y: -10}
+        - {x: 7, y: -9}
+        - {x: 8, y: -9}
+        - {x: 8, y: -5}
+        - {x: 7, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -10}
+        - {x: 3, y: -10}
+        - {x: 3, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -7}
+        - {x: -5, y: -7}
+        - {x: -5, y: -9}
+        - {x: -4, y: -9}
+        - {x: -4, y: -10}
+        - {x: -3, y: -10}
+        - {x: -3, y: -12}
+        - {x: -4, y: -12}
+        - {x: -4, y: -15}
+        - {x: 3, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -10}
+        - {x: 3, y: -10}
+        - {x: 3, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: 6}
+        - {x: 4, y: 6}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 1}
+        - {x: -7, y: 1}
+        - {x: -7, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -3}
+        - {x: -6, y: -3}
+        - {x: -6, y: -7}
+        - {x: -5, y: -7}
+        - {x: -5, y: -9}
+        - {x: -4, y: -9}
+        - {x: -4, y: -10}
+        - {x: -3, y: -10}
+        - {x: -3, y: -12}
+        - {x: -4, y: -12}
+        - {x: -4, y: -15}
+        - {x: 3, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: -9}
+        - {x: 4, y: -9}
+        - {x: 4, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: 9}
+        - {x: -4, y: 9}
+        - {x: -4, y: 8}
+        - {x: -6, y: 8}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 2}
+        - {x: -7, y: 2}
+        - {x: -7, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -11}
+        - {x: 0, y: -11}
+        - {x: 0, y: -14}
+        - {x: 3, y: -14}
+        - {x: 3, y: -13}
+        - {x: 5, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_21
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -10}
+        - {x: 7, y: -10}
+        - {x: 7, y: -8}
+        - {x: 6, y: -8}
+        - {x: 6, y: -7}
+        - {x: 5, y: -7}
+        - {x: 5, y: -6}
+        - {x: 4, y: -6}
+        - {x: 4, y: -1}
+        - {x: 5, y: -1}
+        - {x: 5, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: 9}
+        - {x: -4, y: 9}
+        - {x: -4, y: 8}
+        - {x: -6, y: 8}
+        - {x: -6, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 3}
+        - {x: -6, y: 3}
+        - {x: -6, y: 2}
+        - {x: -7, y: 2}
+        - {x: -7, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: -4}
+        - {x: -7, y: -4}
+        - {x: -7, y: -7}
+        - {x: -8, y: -7}
+        - {x: -8, y: -10}
+        - {x: -7, y: -10}
+        - {x: -7, y: -11}
+        - {x: -1, y: -11}
+        - {x: -1, y: -12}
+        - {x: 5, y: -12}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_22
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -13}
+        - {x: 4, y: -12}
+        - {x: 5, y: -12}
+        - {x: 5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 6, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 8}
+        - {x: -3, y: 8}
+        - {x: -3, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: 2}
+        - {x: -5, y: 2}
+        - {x: -5, y: 1}
+        - {x: -6, y: 1}
+        - {x: -6, y: -2}
+        - {x: -7, y: -2}
+        - {x: -7, y: -5}
+        - {x: -6, y: -5}
+        - {x: -6, y: -9}
+        - {x: -7, y: -9}
+        - {x: -7, y: -11}
+        - {x: -6, y: -11}
+        - {x: -6, y: -12}
+        - {x: -5, y: -12}
+        - {x: -5, y: -13}
+        - {x: -2, y: -13}
+        - {x: -2, y: -11}
+        - {x: -1, y: -11}
+        - {x: -1, y: -12}
+        - {x: 0, y: -12}
+        - {x: 0, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_23
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -15}
+        - {x: 2, y: -12}
+        - {x: 1, y: -12}
+        - {x: 1, y: -10}
+        - {x: 2, y: -10}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: -1}
+        - {x: 4, y: -1}
+        - {x: 4, y: 6}
+        - {x: 3, y: 6}
+        - {x: 3, y: 7}
+        - {x: 1, y: 7}
+        - {x: 1, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 6}
+        - {x: -8, y: 6}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -12}
+        - {x: -4, y: -12}
+        - {x: -4, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_24
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -14}
+        - {x: 3, y: -13}
+        - {x: 4, y: -13}
+        - {x: 4, y: -11}
+        - {x: 3, y: -11}
+        - {x: 3, y: -9}
+        - {x: 2, y: -9}
+        - {x: 2, y: -8}
+        - {x: 1, y: -8}
+        - {x: 1, y: -6}
+        - {x: 2, y: -6}
+        - {x: 2, y: -1}
+        - {x: 3, y: -1}
+        - {x: 3, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 8}
+        - {x: 1, y: 8}
+        - {x: 1, y: 9}
+        - {x: -5, y: 9}
+        - {x: -5, y: 8}
+        - {x: -7, y: 8}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -7}
+        - {x: -7, y: -7}
+        - {x: -7, y: -9}
+        - {x: -5, y: -9}
+        - {x: -5, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -12}
+        - {x: -1, y: -12}
+        - {x: -1, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -12}
+        - {x: 0, y: -13}
+        - {x: 5, y: -13}
+        - {x: 5, y: -9}
+        - {x: 4, y: -9}
+        - {x: 4, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -6}
+        - {x: 3, y: -6}
+        - {x: 3, y: 0}
+        - {x: 4, y: 0}
+        - {x: 4, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 8}
+        - {x: 1, y: 8}
+        - {x: 1, y: 9}
+        - {x: -5, y: 9}
+        - {x: -5, y: 8}
+        - {x: -7, y: 8}
+        - {x: -7, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: 3}
+        - {x: -7, y: 3}
+        - {x: -7, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: 0}
+        - {x: -7, y: 0}
+        - {x: -7, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: -2}
+        - {x: -7, y: -2}
+        - {x: -7, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -9}
+        - {x: -8, y: -9}
+        - {x: -8, y: -10}
+        - {x: -7, y: -10}
+        - {x: -7, y: -11}
+        - {x: -6, y: -11}
+        - {x: -6, y: -12}
+        - {x: -2, y: -12}
+        - {x: -2, y: -11}
+        - {x: -1, y: -11}
+        - {x: -1, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_26
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 35
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13}
+        - {x: 3, y: -12}
+        - {x: 5, y: -12}
+        - {x: 5, y: -10}
+        - {x: 4, y: -10}
+        - {x: 4, y: -9}
+        - {x: 3, y: -9}
+        - {x: 3, y: -8}
+        - {x: 2, y: -8}
+        - {x: 2, y: -7}
+        - {x: 3, y: -7}
+        - {x: 3, y: -1}
+        - {x: 4, y: -1}
+        - {x: 4, y: 6}
+        - {x: 3, y: 6}
+        - {x: 3, y: 7}
+        - {x: 1, y: 7}
+        - {x: 1, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 7}
+        - {x: -7, y: 7}
+        - {x: -7, y: 6}
+        - {x: -8, y: 6}
+        - {x: -8, y: 2}
+        - {x: -7, y: 2}
+        - {x: -7, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: -1}
+        - {x: -7, y: -1}
+        - {x: -7, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -7, y: -3}
+        - {x: -7, y: -8}
+        - {x: -6, y: -8}
+        - {x: -6, y: -9}
+        - {x: -7, y: -9}
+        - {x: -7, y: -10}
+        - {x: -8, y: -10}
+        - {x: -8, y: -12}
+        - {x: -7, y: -12}
+        - {x: -7, y: -14}
+        - {x: -2, y: -14}
+        - {x: -2, y: -12}
+        - {x: -1, y: -12}
+        - {x: -1, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -12}
+        - {x: 3, y: -12}
+        - {x: 3, y: -10}
+        - {x: 4, y: -10}
+        - {x: 4, y: -9}
+        - {x: 5, y: -9}
+        - {x: 5, y: -7}
+        - {x: 6, y: -7}
+        - {x: 6, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -10}
+        - {x: -2, y: -10}
+        - {x: -2, y: -12}
+        - {x: -3, y: -12}
+        - {x: -3, y: -15}
+        - {x: 4, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -12}
+        - {x: 3, y: -12}
+        - {x: 3, y: -10}
+        - {x: 4, y: -10}
+        - {x: 4, y: -9}
+        - {x: 5, y: -9}
+        - {x: 5, y: -7}
+        - {x: 6, y: -7}
+        - {x: 6, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: 1}
+        - {x: 6, y: 1}
+        - {x: 6, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: 7}
+        - {x: 4, y: 7}
+        - {x: 4, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 6}
+        - {x: -5, y: 6}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -10}
+        - {x: -2, y: -10}
+        - {x: -2, y: -12}
+        - {x: -3, y: -12}
+        - {x: -3, y: -15}
+        - {x: 4, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_29
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -14}
+        - {x: 0, y: -14}
+        - {x: 0, y: -11}
+        - {x: 5, y: -11}
+        - {x: 5, y: -10}
+        - {x: 7, y: -10}
+        - {x: 7, y: -7}
+        - {x: 6, y: -7}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 9}
+        - {x: -2, y: 9}
+        - {x: -2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: -6}
+        - {x: -3, y: -6}
+        - {x: -3, y: -8}
+        - {x: -4, y: -8}
+        - {x: -4, y: -9}
+        - {x: -5, y: -9}
+        - {x: -5, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -12}
+        - {x: -5, y: -12}
+        - {x: -5, y: -13}
+        - {x: -3, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -11}
+        - {x: 7, y: -11}
+        - {x: 7, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: -4}
+        - {x: 6, y: -4}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 9}
+        - {x: -2, y: 9}
+        - {x: -2, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: -1}
+        - {x: -4, y: -1}
+        - {x: -4, y: -6}
+        - {x: -5, y: -6}
+        - {x: -5, y: -7}
+        - {x: -6, y: -7}
+        - {x: -6, y: -8}
+        - {x: -7, y: -8}
+        - {x: -7, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -5, y: -11}
+        - {x: -5, y: -12}
+        - {x: 1, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_31
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -12}
+        - {x: 1, y: -12}
+        - {x: 1, y: -11}
+        - {x: 2, y: -11}
+        - {x: 2, y: -13}
+        - {x: 5, y: -13}
+        - {x: 5, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -11}
+        - {x: 7, y: -11}
+        - {x: 7, y: -9}
+        - {x: 6, y: -9}
+        - {x: 6, y: -5}
+        - {x: 7, y: -5}
+        - {x: 7, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: 1}
+        - {x: 5, y: 1}
+        - {x: 5, y: 2}
+        - {x: 6, y: 2}
+        - {x: 6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 7}
+        - {x: 3, y: 7}
+        - {x: 3, y: 8}
+        - {x: -3, y: 8}
+        - {x: -3, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 6}
+        - {x: -6, y: 6}
+        - {x: -6, y: -2}
+        - {x: -5, y: -2}
+        - {x: -5, y: -10}
+        - {x: -6, y: -10}
+        - {x: -6, y: -11}
+        - {x: -5, y: -11}
+        - {x: -5, y: -12}
+        - {x: -4, y: -12}
+        - {x: -4, y: -13}
+        - {x: 0, y: -13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_32
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -1}
+        - {x: 8, y: -1}
+        - {x: 8, y: -1}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 8}
+        - {x: -1, y: 8}
+        - {x: -1, y: 7}
+        - {x: -3, y: 7}
+        - {x: -3, y: 6}
+        - {x: -4, y: 6}
+        - {x: -4, y: -1}
+        - {x: -3, y: -1}
+        - {x: -3, y: -6}
+        - {x: -2, y: -6}
+        - {x: -2, y: -10}
+        - {x: -1, y: -10}
+        - {x: -1, y: -12}
+        - {x: -2, y: -12}
+        - {x: -2, y: -15}
+        - {x: 4, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_33
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -9}
+        - {x: 7, y: -9}
+        - {x: 7, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+        - {x: 5, y: 8}
+        - {x: 5, y: 9}
+        - {x: -1, y: 9}
+        - {x: -1, y: 8}
+        - {x: -3, y: 8}
+        - {x: -3, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 0}
+        - {x: -3, y: 0}
+        - {x: -3, y: -1}
+        - {x: -2, y: -1}
+        - {x: -2, y: -6}
+        - {x: -1, y: -6}
+        - {x: -1, y: -8}
+        - {x: -2, y: -8}
+        - {x: -2, y: -9}
+        - {x: -3, y: -9}
+        - {x: -3, y: -11}
+        - {x: -4, y: -11}
+        - {x: -4, y: -13}
+        - {x: -3, y: -13}
+        - {x: -3, y: -14}
+        - {x: 1, y: -14}
+        - {x: 1, y: -12}
+        - {x: 4, y: -12}
+        - {x: 4, y: -11}
+        - {x: 5, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_34
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: -9}
+        - {x: 7, y: -9}
+        - {x: 7, y: -8}
+        - {x: 6, y: -8}
+        - {x: 6, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: -2}
+        - {x: 6, y: -2}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: 2}
+        - {x: 7, y: 2}
+        - {x: 7, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: 8}
+        - {x: 5, y: 8}
+        - {x: 5, y: 9}
+        - {x: -1, y: 9}
+        - {x: -1, y: 8}
+        - {x: -3, y: 8}
+        - {x: -3, y: 7}
+        - {x: -4, y: 7}
+        - {x: -4, y: 0}
+        - {x: -3, y: 0}
+        - {x: -3, y: -6}
+        - {x: -2, y: -6}
+        - {x: -2, y: -7}
+        - {x: -3, y: -7}
+        - {x: -3, y: -8}
+        - {x: -4, y: -8}
+        - {x: -4, y: -9}
+        - {x: -5, y: -9}
+        - {x: -5, y: -13}
+        - {x: 0, y: -13}
+        - {x: 0, y: -12}
+        - {x: 1, y: -12}
+        - {x: 1, y: -11}
+        - {x: 2, y: -11}
+        - {x: 2, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: -11}
+        - {x: 7, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySprite_Grunt_35
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 7, y: -12}
+        - {x: 8, y: -12}
+        - {x: 8, y: -10}
+        - {x: 7, y: -10}
+        - {x: 7, y: -9}
+        - {x: 6, y: -9}
+        - {x: 6, y: -8}
+        - {x: 7, y: -8}
+        - {x: 7, y: -3}
+        - {x: 6, y: -3}
+        - {x: 6, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -1}
+        - {x: 8, y: -1}
+        - {x: 8, y: -1}
+        - {x: 8, y: 1}
+        - {x: 7, y: 1}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: 8}
+        - {x: -1, y: 8}
+        - {x: -1, y: 7}
+        - {x: -3, y: 7}
+        - {x: -3, y: 6}
+        - {x: -4, y: 6}
+        - {x: -4, y: -1}
+        - {x: -3, y: -1}
+        - {x: -3, y: -7}
+        - {x: -2, y: -7}
+        - {x: -2, y: -8}
+        - {x: -3, y: -8}
+        - {x: -3, y: -9}
+        - {x: -4, y: -9}
+        - {x: -4, y: -10}
+        - {x: -5, y: -10}
+        - {x: -5, y: -12}
+        - {x: -3, y: -12}
+        - {x: -3, y: -13}
+        - {x: 1, y: -13}
+        - {x: 1, y: -12}
+        - {x: 2, y: -12}
+        - {x: 2, y: -14}
+        - {x: 7, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8d4c4bd41e5ab145a54b646814e6340
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnemySprite_Grunt_0: 21300000
+      EnemySprite_Grunt_1: 21300002
+      EnemySprite_Grunt_10: 21300020
+      EnemySprite_Grunt_11: 21300022
+      EnemySprite_Grunt_12: 21300024
+      EnemySprite_Grunt_13: 21300026
+      EnemySprite_Grunt_14: 21300028
+      EnemySprite_Grunt_15: 21300030
+      EnemySprite_Grunt_16: 21300032
+      EnemySprite_Grunt_17: 21300034
+      EnemySprite_Grunt_18: 21300036
+      EnemySprite_Grunt_19: 21300038
+      EnemySprite_Grunt_2: 21300004
+      EnemySprite_Grunt_20: 21300040
+      EnemySprite_Grunt_21: 21300042
+      EnemySprite_Grunt_22: 21300044
+      EnemySprite_Grunt_23: 21300046
+      EnemySprite_Grunt_24: 21300048
+      EnemySprite_Grunt_25: 21300050
+      EnemySprite_Grunt_26: 21300052
+      EnemySprite_Grunt_27: 21300054
+      EnemySprite_Grunt_28: 21300056
+      EnemySprite_Grunt_29: 21300058
+      EnemySprite_Grunt_3: 21300006
+      EnemySprite_Grunt_30: 21300060
+      EnemySprite_Grunt_31: 21300062
+      EnemySprite_Grunt_32: 21300064
+      EnemySprite_Grunt_33: 21300066
+      EnemySprite_Grunt_34: 21300068
+      EnemySprite_Grunt_35: 21300070
+      EnemySprite_Grunt_4: 21300008
+      EnemySprite_Grunt_5: 21300010
+      EnemySprite_Grunt_6: 21300012
+      EnemySprite_Grunt_7: 21300014
+      EnemySprite_Grunt_8: 21300016
+      EnemySprite_Grunt_9: 21300018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

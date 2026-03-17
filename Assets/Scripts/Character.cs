@@ -1,8 +1,10 @@
-﻿using Assets.Scripts.Managers;
+﻿using Assets.Scripts.Enums;
+using Assets.Scripts.Managers;
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[Obsolete("Character is obsolete. Use CharacterComponent instead.")]
 public class Character : MonoBehaviour {
 
     [HideInInspector] public Rigidbody2D m_Rigidbody;
@@ -56,14 +58,14 @@ public class Character : MonoBehaviour {
         }
     }
 
-    public void UpdateCharacterFacing(InputDirection m_CharacterFacingNew) {
+    public void UpdateCharacterFacing(DirectionEnum m_CharacterFacingNew) {
 
         //Convert from InputDirection to corresponding Vector2
         switch(m_CharacterFacingNew) {
-            case InputDirection.DOWN: m_CharacterFacingVector = Vector2.down; m_CharacterRotation = 180f; break;
-            case InputDirection.UP: m_CharacterFacingVector = Vector2.up; m_CharacterRotation = 0f; break;
-            case InputDirection.LEFT: m_CharacterFacingVector = Vector2.left; m_CharacterRotation = 90f; break;
-            case InputDirection.RIGHT: m_CharacterFacingVector = Vector2.right; m_CharacterRotation = 270f; break;
+            case DirectionEnum.DOWN: m_CharacterFacingVector = Vector2.down; m_CharacterRotation = 180f; break;
+            case DirectionEnum.UP: m_CharacterFacingVector = Vector2.up; m_CharacterRotation = 0f; break;
+            case DirectionEnum.LEFT: m_CharacterFacingVector = Vector2.left; m_CharacterRotation = 90f; break;
+            case DirectionEnum.RIGHT: m_CharacterFacingVector = Vector2.right; m_CharacterRotation = 270f; break;
             default: Debug.Log("MovingObject.cs >> UpdateFacing(InputDirection) [InputDirection not found]: Could not update sprite facing."); break;
         }
 
@@ -75,7 +77,7 @@ public class Character : MonoBehaviour {
     public virtual void TakeDamage(int damage) {
 
         if(!m_IFramesActive) {
-            int _TrueDamage = (damage - m_Defense >= GameManager.Instance.m_MinimumDamage) ? damage - m_Defense : GameManager.Instance.m_MinimumDamage;
+            int _TrueDamage = (damage - m_Defense >= GameManager.Instance.MinimumDamage) ? damage - m_Defense : GameManager.Instance.MinimumDamage;
 
             InvincibilityFrames();
 
@@ -95,6 +97,7 @@ public class Character : MonoBehaviour {
 
     private IEnumerator IDeath() {
 
+        Debug.Log("Is this still being called?");
         //Eventually, instead of destroying Collider, Rigidbody, and GameObject they should be set inactive so that they can no longer be interacted with
 
         Destroy(GetComponent<Collider2D>()); 
@@ -120,7 +123,7 @@ public class Character : MonoBehaviour {
         float _time = 0f;
         int _i = 1;
 
-        while(_time < GameManager.Instance.m_IFramesDuration) {
+        while(_time < GameManager.Instance.IFramesDuration) {
 
             GetComponent<SpriteRenderer>().enabled = _i > GameManager.Instance.m_IFrameFlickerRate ? true : false;
 

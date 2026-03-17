@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 645b01de96e47104793c57f275366446
+timeCreated: 1496694935
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 8
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Homespun TT BRK
+  fontNames:
+  - Homespun TT BRK
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

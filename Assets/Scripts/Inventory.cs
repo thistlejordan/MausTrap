@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour {
             }
         }
 
-        if(GameManager.Instance.m_DebugMode) { Debug.Log("No Match Found for: " + item.name); }
+        if(GameManager.Instance.DebugMode) { Debug.Log("No Match Found for: " + item.name); }
     }
 
     public void AddContents(Item item, int quantity = 1) {
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour {
                 if(Item.name == item.name) {
                     Item.m_Quantity += item.m_Quantity;
                         
-                    if(GameManager.Instance.m_DebugMode) { Debug.Log(quantity + " " + item.name + " added to inventory."); }
+                    if(GameManager.Instance.DebugMode) { Debug.Log(quantity + " " + item.name + " added to inventory."); }
                         
                     break;
                 }

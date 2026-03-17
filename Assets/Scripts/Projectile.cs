@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour {
 
 	void Awake () {
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1).normalized * m_ProjectileSpeed;
+        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 1).normalized * m_ProjectileSpeed;
 	}
 	
 	// Update is called once per frame

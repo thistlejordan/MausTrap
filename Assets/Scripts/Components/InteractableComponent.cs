@@ -1,23 +1,67 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Components.Items;
+using UnityEngine;
 
 namespace Assets.Scripts.Components
 {
-    public class InteractableComponent : MonoBehaviour
+    public abstract class InteractableComponent : MonoBehaviour
     {
-        private SpriteRenderer _spriteRenderer;
-        public Sprite _alternateSprite;
+        #region Fields
 
-        public string _dialog;
-        public Item _item;
+        protected SpriteRenderer _spriteRenderer;
 
-        public string Dialog { get => _dialog; set => _dialog = value; }
-        public Item Item { get => _item; set => _item = value; }
+        [SerializeField] protected string _dialog;
+        [SerializeField] protected ItemComponent item;
+
+        #endregion
+
+        #region Unity Awake
 
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+
+            var item = GetComponentInChildren<ItemComponent>();
+
+            if (this.item == null && item != null)
+            {
+                PutItem(item);
+            }
         }
 
-        public void UseAlternateSprite() => _spriteRenderer.sprite = _alternateSprite;
+        #endregion
+
+        #region Methods
+
+        public abstract void OnInteract(PlayerComponent player, PlayerCharacterComponent playerCharacter);
+
+        public void PutItem(ItemComponent item)
+        {
+            if (item == null)
+            {
+                Debug.LogWarning("Will not put null item. Use TakeItem() to nullify item.", this);
+                return;
+            }
+
+            this.item = item;
+            this.item.transform.SetParent(this.transform);
+            this.item.Hide();
+        }
+
+        public ItemComponent TakeItem()
+        {
+            var item = this.item;
+            this.item = null;
+            return item;
+        }
+
+        public void RemoveContents()
+        {
+            if (this.item != null)
+            {
+                Destroy(this.item);
+            }
+        }
+
+        #endregion
     }
 }
