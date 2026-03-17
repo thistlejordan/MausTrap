@@ -16,7 +16,7 @@ namespace Assets.Scripts.Components.GameWorld
         public void Unlock(KeyChainComponent keyChain)
         {
             keyChain.UseKey(this);
-            this.GetComponent<Collider2D>().isTrigger = true;
+            this.GetComponent<LockableComponent>().Unlock();
             this.isLocked = false;
         }
     }

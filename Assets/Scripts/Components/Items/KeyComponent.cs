@@ -8,7 +8,8 @@ namespace Assets.Scripts.Components.Items
         [SerializeField] private LevelEnum level;
         [SerializeField] private bool isBigKey;
 
-        public LevelEnum Level { get => this.level; }
-        public bool IsBigKey { get => this.isBigKey; }
+        public LevelEnum Level => this.level;
+
+        public bool IsBigKey => this.isBigKey;
     }
 }
