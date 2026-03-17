@@ -89,7 +89,7 @@ public class CharacterComponent : MonoBehaviour
         if (newInputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
         if (newInputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
 
-        _rigidbody.velocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
+        _rigidbody.linearVelocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
     }
 
     public virtual void RestoreHealth(int value) => _health += (_health + value > _maxHealth) ? 0 : value;
@@ -162,7 +162,7 @@ public class CharacterComponent : MonoBehaviour
     private IEnumerator IKnockback(Vector2 direction, float force)
     {
         this.controlLoss = true;
-        _rigidbody.velocity = direction * force;
+        _rigidbody.linearVelocity = direction * force;
         yield return new WaitForSeconds(0.1f);
         this.controlLoss = false;
     }
