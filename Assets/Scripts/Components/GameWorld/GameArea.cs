@@ -10,8 +10,6 @@ namespace Assets.Scripts.Components.GameWorld
 
             var cameraDirector = otherCollider.GetComponentInChildren<CameraDirector>();
 
-            Debug.Log($"OnTriggerEnter2D: {this.name}");
-
             cameraDirector.SetBounds(this.GetComponent<Collider2D>());
         }
 
