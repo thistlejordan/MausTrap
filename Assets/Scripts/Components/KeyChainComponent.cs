@@ -39,21 +39,31 @@ namespace Assets.Scripts.Components
 
         public bool HasKey(LockComponent @lock)
         {
-            if (!this.keyDictionary.ContainsKey(@lock.Level)) this.keyDictionary.Add(@lock.Level, (0, false));
+            // TODO: For testing, returning true for all locks. Remove this when we have keys implemented and can test properly.
+            return true;
+
+            if (!this.keyDictionary.ContainsKey(@lock.Level))
+            {
+                this.keyDictionary.Add(@lock.Level, (0, false));
+            }
+
             return !@lock.RequiresBigKey ? this.keyDictionary[@lock.Level].Item1 > 0 : this.keyDictionary[@lock.Level].Item2;
         }
 
         public void UseKey(LockComponent @lock)
         {
-            if (HasKey(@lock))
+            if (this.HasKey(@lock))
             {
-                if (@lock.RequiresBigKey) return;
-                else this.keyDictionary[@lock.Level] = (this.keyDictionary[@lock.Level].Item1 - 1, this.keyDictionary[@lock.Level].Item2);
+                if (@lock.RequiresBigKey)
+                {
+                    return;
+                }
+
+                // this.keyDictionary[@lock.Level] = (this.keyDictionary[@lock.Level].Item1 - 1, this.keyDictionary[@lock.Level].Item2);
+                return;
             }
-            else
-            {
-                Debug.LogWarning($"Tried using key for {@lock.Level}, but don't have one. Should use 'HasKey' before calling 'UseKey'");
-            }
+
+            Debug.LogWarning($"Tried using key for {@lock.Level}, but don't have one. Should use 'HasKey' before calling 'UseKey'");
         }
 
         public override IEnumerator IAddItem(ItemComponent item, PlayerComponent player, Action<ItemComponent> callback)

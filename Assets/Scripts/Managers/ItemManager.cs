@@ -45,11 +45,11 @@ namespace Assets.Scripts.Managers
             chests.Shuffle();
             items.Shuffle();
 
-            for (int i = 0; i < _chests.Count && i < items.Count; i++)
+            for (int i = 0; i < chests.Count && i < items.Count; i++)
             {
                 var item = Instantiate(items[i]);
                 item.name = items[i].name;
-                _chests[i].PutItem(item);
+                chests[i].PutItem(item);
             }
         }
     }

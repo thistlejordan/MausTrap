@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Assets.Scripts.Components.GameWorld
 {
-    public class DoorComponent : MonoBehaviour
+    public class DoorComponent : LockableComponent
     {
         [SerializeField] private bool isOpen;
-        [SerializeField] private LockComponent @lock;
         [SerializeField] private DoorComponent exitDoor;
 
+        private LockComponent @lock;
         private GameAreaTransitionArea transitionArea;
         private GameArea gameArea;
 
@@ -16,15 +16,31 @@ namespace Assets.Scripts.Components.GameWorld
 
         public DoorComponent ExitDoor => this.exitDoor;
 
+        public LockComponent Lock
+        {
+            get
+            {
+                if (this.@lock == null)
+                {
+                    this.@lock = this.GetComponent<LockComponent>();
+                }
+
+                return this.@lock;
+            }
+        }
+
         public GameArea GameArea
         {
             get
             {
-                this.gameArea = this.GetComponentInParent<GameArea>();
-
-                if (this.ExitDoor == null)
+                if (this.gameArea == null)
                 {
-                    Debug.LogError($"{this.GameArea.name} {this.name} is missing Corresponding exit door DoorComponent.");
+                    this.gameArea = this.GetComponentInParent<GameArea>();
+
+                    if (this.ExitDoor == null)
+                    {
+                        Debug.LogError($"{this.GameArea.name} {this.name} is missing Corresponding exit door DoorComponent.");
+                    }
                 }
 
                 return this.gameArea;
@@ -35,17 +51,19 @@ namespace Assets.Scripts.Components.GameWorld
         {
             get
             {
-                this.transitionArea = this.GetComponentInChildren<GameAreaTransitionArea>();
-
                 if (this.transitionArea == null)
                 {
-                    Debug.LogError($"{this.GameArea.name} {this.name} is missing a GameAreaTransitionArea component.");
+                    this.transitionArea = this.GetComponentInChildren<GameAreaTransitionArea>();
+
+                    if (this.transitionArea == null)
+                    {
+                        Debug.LogError($"{this.GameArea.name} {this.name} is missing a GameAreaTransitionArea component.");
+                    }
                 }
 
                 return this.transitionArea;
             }
         }
-
 
         private void Awake()
         {
@@ -53,7 +71,11 @@ namespace Assets.Scripts.Components.GameWorld
 
         public void Open()
         {
-            if (this.isOpen) return;
+            if (this.isOpen)
+            {
+                return;
+            }
+
             this.AnimateDoorOpen();
             this.GetComponent<Collider2D>().isTrigger = true;
             this.isOpen = true;
@@ -86,6 +108,11 @@ namespace Assets.Scripts.Components.GameWorld
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            if (this.Lock == null)
+            {
+                return;
+            }
+
             var playerCharacter = collision.collider.GetComponent<PlayerCharacterComponent>();
 
             if (playerCharacter == null)
@@ -93,9 +120,9 @@ namespace Assets.Scripts.Components.GameWorld
                 return;
             }
 
-            if (playerCharacter.KeyChain.HasKey(this.@lock) && this.@lock.IsLocked)
+            if (playerCharacter.KeyChain.HasKey(this.Lock) && this.Lock.IsLocked)
             {
-                this.@lock.Unlock(playerCharacter.KeyChain);
+                this.Lock.Unlock(playerCharacter.KeyChain);
                 this.Open();
                 this.exitDoor.Open();
             }
@@ -134,5 +161,10 @@ namespace Assets.Scripts.Components.GameWorld
         }
 
         public void TransitionCharacter(PlayerCharacterComponent playerCharacter) => this.StartCoroutine(IExitThroughDoorway(playerCharacter));
+
+        public override void Unlock()
+        {
+            this.Open();
+        }
     }
 }
