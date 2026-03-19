@@ -10,7 +10,9 @@ namespace Assets.Scripts.Components.GameWorld
         [SerializeField] private bool requiresBigKey;
 
         public LevelEnum Level => this.level;
+
         public bool IsLocked => this.isLocked;
+
         public bool RequiresBigKey => this.requiresBigKey;
 
         public void Unlock(KeyChainComponent keyChain)
