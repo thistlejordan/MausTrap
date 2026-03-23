@@ -14,6 +14,9 @@ namespace Assets.Scripts.Components
         // LevelEnum: (keyCount, hasMaster)
         private Dictionary<LevelEnum, (int, bool)> keyDictionary;
 
+        // Event triggered when key count changes
+        public event Action<LevelEnum, int> OnKeyCountChanged;
+
         private void Awake()
         {
             this.keyDictionary = new Dictionary<LevelEnum, (int, bool)>();
@@ -39,9 +42,6 @@ namespace Assets.Scripts.Components
 
         public bool HasKey(LockComponent @lock)
         {
-            // TODO: For testing, returning true for all locks. Remove this when we have keys implemented and can test properly.
-            return true;
-
             if (!this.keyDictionary.ContainsKey(@lock.Level))
             {
                 this.keyDictionary.Add(@lock.Level, (0, false));
@@ -59,23 +59,58 @@ namespace Assets.Scripts.Components
                     return;
                 }
 
-                // this.keyDictionary[@lock.Level] = (this.keyDictionary[@lock.Level].Item1 - 1, this.keyDictionary[@lock.Level].Item2);
+                this.keyDictionary[@lock.Level] = (this.keyDictionary[@lock.Level].Item1 - 1, this.keyDictionary[@lock.Level].Item2);
+                OnKeyCountChanged?.Invoke(@lock.Level, this.keyDictionary[@lock.Level].Item1);
                 return;
             }
 
             Debug.LogWarning($"Tried using key for {@lock.Level}, but don't have one. Should use 'HasKey' before calling 'UseKey'");
         }
 
+        public int GetKeyCount(LevelEnum level)
+        {
+            if (!this.keyDictionary.ContainsKey(level))
+            {
+                return 0;
+            }
+
+            return this.keyDictionary[level].Item1;
+        }
+
+        public bool HasBigKey(LevelEnum level)
+        {
+            if (!this.keyDictionary.ContainsKey(level))
+            {
+                return false;
+            }
+
+            return this.keyDictionary[level].Item2;
+        }
+
         public override IEnumerator IAddItem(ItemComponent item, PlayerComponent player, Action<ItemComponent> callback)
         {
             var key = item.GetComponent<KeyComponent>();
 
-            if (key is null || (key.IsBigKey && keyDictionary[key.Level].Item2.Equals(true))) callback(item);
-            else
+            // If item is not a key or if it's a duplicate big key, return it
+            if (key is null)
             {
-                if (!this.keyDictionary.ContainsKey(key.Level)) this.keyDictionary.Add(key.Level, (0, false));
+                callback(item);
+                yield break;
             }
 
+            if (key.IsBigKey && this.keyDictionary.ContainsKey(key.Level) && this.keyDictionary[key.Level].Item2)
+            {
+                callback(item);
+                yield break;
+            }
+
+            // Initialize the level if it doesn't exist
+            if (!this.keyDictionary.ContainsKey(key.Level))
+            {
+                this.keyDictionary.Add(key.Level, (0, false));
+            }
+
+            // Add the key
             if (key.IsBigKey)
             {
                 this.keyDictionary[key.Level] = (this.keyDictionary[key.Level].Item1, true);
@@ -85,7 +120,10 @@ namespace Assets.Scripts.Components
                 this.keyDictionary[key.Level] = (this.keyDictionary[key.Level].Item1 + 1, this.keyDictionary[key.Level].Item2);
             }
 
-            // _inventoryMenu.AddItemToInventoryMenu(item);
+            // Notify listeners of the key count change
+            OnKeyCountChanged?.Invoke(key.Level, this.keyDictionary[key.Level].Item1);
+
+            // Play animation and sound
             AudioManager.Instance.m_AudioSource.PlayOneShot(AudioManager.Instance.m_ItemGetSoundEffect, 0.1f);
             yield return player.IAwait(item.IItemGetAnimation(), InputType.Character);
             Destroy(item);
