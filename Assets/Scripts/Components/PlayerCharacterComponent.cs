@@ -26,7 +26,8 @@ public class PlayerCharacterComponent : CharacterComponent
         EquipItem(this.inventory.GetDefaultItem());
         this.HUD.HealthBarComponent.UpdateHealth(_health);
         this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
-        
+        this.HUD.KeyCountComponent.UpdateKeyCount(this.keyChain.GetKeyCount(LevelEnum.LEVEL_1));
+
         // Subscribe to key count changes
         this.keyChain.OnKeyCountChanged += OnKeyCountChanged;
     }
