@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Components;
 using Assets.Scripts.Components.Items;
+using Assets.Scripts.Enums;
 using Assets.Scripts.Managers;
 using Assets.Scripts.Models;
 using System.Collections;
@@ -25,6 +26,10 @@ public class PlayerCharacterComponent : CharacterComponent
         EquipItem(this.inventory.GetDefaultItem());
         this.HUD.HealthBarComponent.UpdateHealth(_health);
         this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
+        this.HUD.KeyCountComponent.UpdateKeyCount(this.keyChain.GetKeyCount(LevelEnum.LEVEL_1));
+
+        // Subscribe to key count changes
+        this.keyChain.OnKeyCountChanged += OnKeyCountChanged;
     }
 
     public void EquipItem(ItemComponent item)
@@ -81,6 +86,21 @@ public class PlayerCharacterComponent : CharacterComponent
     }
 
     public void UseItem() => throw new System.NotImplementedException();
+
+    private void OnKeyCountChanged(LevelEnum level, int count)
+    {
+        // Update HUD
+        if (this.HUD.KeyCountComponent != null)
+        {
+            this.HUD.KeyCountComponent.UpdateKeyCount(count);
+        }
+
+        // Update inventory menu
+        if (this.inventory._inventoryMenu != null)
+        {
+            this.inventory._inventoryMenu.UpdateKeyCountInMenu(level, count);
+        }
+    }
 
     private IEnumerator IAttack()
     {
