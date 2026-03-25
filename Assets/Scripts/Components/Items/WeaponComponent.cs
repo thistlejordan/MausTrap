@@ -7,41 +7,43 @@ namespace Assets.Scripts.Components.Items
     [RequireComponent(typeof(Collider2D))]
     public abstract class WeaponComponent : ItemComponent
     {
-        [SerializeField] private int _damage;
-        [SerializeField] private int _knockbackForce;
-
-        private Coroutine AttackCoroutine;
+        [SerializeField] private int damage;
+        [SerializeField] private int knockbackForce;
+        private Coroutine attackCoroutine;
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-            var target = other.GetComponent<CharacterComponent>();
+            var target = other.GetComponent<DestructableComponent>();
 
-            if (target != null)
+            if (target == null)
             {
-                var attackModel = BuildAttackModel();
-                attackModel.KnockbackDirection = (other.transform.position - GetComponentInParent<CharacterComponent>().transform.position).normalized;
-                target.ReceiveAttack(attackModel);
+                // No target to attack, ignore collision
+                return;
             }
+
+            var attackModel = this.BuildAttackModel();
+            attackModel.KnockbackDirection = (other.transform.position - this.transform.position).normalized;
+            target.ReceiveAttack(attackModel);
         }
 
         public override void Use(CharacterComponent user)
         {
-            if (AttackCoroutine != null)
+            if (this.attackCoroutine != null)
             {
-                StopCoroutine(AttackCoroutine);
+                this.StopCoroutine(attackCoroutine);
             }
 
-            gameObject.SetActive(true);
-            AttackCoroutine = StartCoroutine(IAttack(user));
+            this.gameObject.SetActive(true);
+            this.attackCoroutine = this.StartCoroutine(this.IAttack(user));
         }
 
         public abstract IEnumerator IAttack(CharacterComponent attacker);
 
         private AttackModel BuildAttackModel() =>
-            new AttackModel()
+            new()
             {
-                Damage = _damage,
-                KnockbackForce = _knockbackForce
+                Damage = this.damage,
+                KnockbackForce = this.knockbackForce
             };
     }
 }
