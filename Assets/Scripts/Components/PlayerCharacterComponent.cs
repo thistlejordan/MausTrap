@@ -24,7 +24,7 @@ public class PlayerCharacterComponent : CharacterComponent
     {
         _animator = GetComponent<Animator>();
         EquipItem(this.inventory.GetDefaultItem());
-        this.HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.HealthBarComponent.UpdateHealth(this.Health);
         this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
         this.HUD.KeyCountComponent.UpdateKeyCount(this.keyChain.GetKeyCount(LevelEnum.LEVEL_1));
 
@@ -53,13 +53,13 @@ public class PlayerCharacterComponent : CharacterComponent
     public override void RestoreHealth(int value)
     {
         base.RestoreHealth(value);
-        this.HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.HealthBarComponent.UpdateHealth(this.Health);
     }
 
     public override void ReceiveAttack(AttackModel attack)
     {
         base.ReceiveAttack(attack);
-        this.HUD.HealthBarComponent.UpdateHealth(_health);
+        this.HUD.HealthBarComponent.UpdateHealth(this.Health);
     }
 
     public void Interact(PlayerComponent player) => ParseInteraction()?.OnInteract(player, this);

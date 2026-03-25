@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Enums;
+﻿using Assets.Scripts.Components;
+using Assets.Scripts.Enums;
 using Assets.Scripts.Helpers;
 using Assets.Scripts.Managers;
 using Assets.Scripts.Models;
@@ -7,16 +8,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterComponent : MonoBehaviour
+public class CharacterComponent : DestructableComponent
 {
     // Debugging
     public Text _queueText = null;
-
-    // View
-    [SerializeField] protected Animator _animator;
-    [SerializeField] protected Collider2D _collider;
-    public Rigidbody2D _rigidbody;
-    public SpriteRenderer _spriteRenderer;
 
     public Vector2 _facing;
     [SerializeField] private float _rotation;
@@ -24,11 +19,6 @@ public class CharacterComponent : MonoBehaviour
     [SerializeField] protected float moveSpeedMultiplier;
 
     public FactionsEnum _faction;
-    public bool _invincible;
-    public int _maxHealth;
-    public int _health;
-    public int _defense;
-
 
     private List<DirectionEnum> inputs;
     private Vector2 currentDirection = Vector2.zero;
@@ -36,13 +26,11 @@ public class CharacterComponent : MonoBehaviour
     // Model
     protected bool controlLoss = false;
 
-    public Collider2D Collider { get => _collider; }
     public bool ControlLoss { get => this.controlLoss; }
     public Vector2 CurrentDirection { get => this.currentDirection; }
     public Vector2 Facing { get => _facing; }
     public FactionsEnum Faction { get => _faction; }
     public List<DirectionEnum> Inputs { get => this.inputs; }
-    public bool Invincible { get => _invincible; }
     public float MoveSpeedMultiplier { get => this.moveSpeedMultiplier; }
     public float Rotation { get => _rotation; }
 
@@ -86,37 +74,10 @@ public class CharacterComponent : MonoBehaviour
 
     public void Move(Vector2 newInputs, float moveSpeedMultiplier)
     {
-        if (newInputs == Vector2.zero && _animator.GetBool("moving")) { _animator.SetBool("moving", false); }
-        if (newInputs != Vector2.zero && !_animator.GetBool("moving")) { _animator.SetBool("moving", true); }
+        if (newInputs == Vector2.zero && this.Animator.GetBool("moving")) { this.Animator.SetBool("moving", false); }
+        if (newInputs != Vector2.zero && !this.Animator.GetBool("moving")) { this.Animator.SetBool("moving", true); }
 
-        _rigidbody.linearVelocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
-    }
-
-    public virtual void RestoreHealth(int value) => _health += (_health + value > _maxHealth) ? 0 : value;
-
-    private int CalculateTrueDamage(int damage) => (damage - _defense > 0) ? damage - _defense : 1;
-
-    private void TakeDamage(int trueDamage) => _health = (_health - trueDamage >= 0) ? _health - trueDamage : 0;
-
-    private void CheckForDeath()
-    {
-        if (_health <= 0 && !_animator.GetBool("dead"))
-        {
-            Debug.Log($"Health: {_health}");
-            _animator.SetBool("dead", true);
-            Die();
-        }
-    }
-
-    public virtual void ReceiveAttack(AttackModel attack)
-    {
-        if (!_invincible)
-        {
-            InvincibilityFrames();
-            TakeDamage(CalculateTrueDamage(attack.Damage));
-            Knockback(attack.KnockbackDirection, attack.KnockbackForce);
-            CheckForDeath();
-        }
+        this.Rigidbody.linearVelocity = newInputs.normalized * this.moveSpeed * moveSpeedMultiplier;
     }
 
     public void UpdateFacing(DirectionEnum direction)
@@ -124,8 +85,8 @@ public class CharacterComponent : MonoBehaviour
         _facing = CharacterHelper.GetFacing(direction);
         _rotation = CharacterHelper.GetRotation(direction);
 
-        _animator.SetFloat("input_x", _facing.x);
-        _animator.SetFloat("input_y", _facing.y);
+        this.Animator.SetFloat("input_x", _facing.x);
+        this.Animator.SetFloat("input_y", _facing.y);
     }
 
     public void UpdateQueueText()
@@ -134,49 +95,14 @@ public class CharacterComponent : MonoBehaviour
         foreach (DirectionEnum input in this.inputs) { _queueText.text += input.ToString() + "\n"; }
     }
 
-    private void InvincibilityFrames()
-    {
-        _invincible = true;
-        StartCoroutine(IInvincibilityFrames());
-    }
-
-    private IEnumerator IInvincibilityFrames()
-    {
-        float _time = 0f;
-        int _i = 1;
-
-        while (_time < GameManager.Instance.IFramesDuration)
-        {
-            _spriteRenderer.enabled = _i > GameManager.Instance.m_IFrameFlickerRate ? true : false;
-            if (_i < (11 - GameManager.Instance.m_IFrameFlickerRate) * 2) { ++_i; } else { _i = 1; }
-            _time += Time.deltaTime;
-            yield return new WaitForEndOfFrame();
-        }
-
-        _spriteRenderer.enabled = true;
-        _invincible = false;
-    }
-
-    public void Knockback(Vector2 direction, float force) => StartCoroutine(IKnockback(direction, force));
+    public override Coroutine Knockback(Vector2 vector2, float force) => this.StartCoroutine(IKnockback(vector2, force));
 
     private IEnumerator IKnockback(Vector2 direction, float force)
     {
         this.controlLoss = true;
-        _rigidbody.linearVelocity = direction * force;
-        yield return new WaitForSeconds(0.1f);
+        yield return base.Knockback(direction, force);
         this.controlLoss = false;
     }
-
-    private void Die() => StartCoroutine(IDie());
-
-    private IEnumerator IDie()
-    {
-        _animator.SetBool("dead", true);
-        yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
-        Destroy(gameObject);
-    }
-
-    public virtual void SetControlLoss(float duration) => StartCoroutine(IControlLoss(duration));
 
     public virtual void SetControlLoss(bool value) => this.controlLoss = value;
 
