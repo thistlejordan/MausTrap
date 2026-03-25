@@ -25,7 +25,10 @@ namespace Assets.Scripts.Components
         public void OnTriggerEnter2D(Collider2D collider)
         {
             CharacterComponent otherCharacter = collider.GetComponent<CharacterComponent>();
-            if (otherCharacter) { _chaseBehavior.AcquireTarget(otherCharacter); }
+            if (otherCharacter)
+            {
+                _chaseBehavior.AcquireTarget(otherCharacter);
+            }
         }
 
         public void OnTriggerExit2D(Collider2D collider)

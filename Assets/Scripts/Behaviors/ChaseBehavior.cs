@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Enums;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.Behaviors
@@ -8,64 +9,103 @@ namespace Assets.Scripts.Behaviors
     [RequireComponent(typeof(CharacterComponent))]
     public class ChaseBehavior : MonoBehaviour
     {
-        private CharacterComponent _character;
-        private bool _pursuing = false;
-        private List<CharacterComponent> _acquiredTargets = new List<CharacterComponent>();
+        private bool pursuing = false;
 
-        [SerializeField] private float _minChaseDistance = 0f;
-        [SerializeField] private List<CharacterComponent> _targetCharacters;
-        [SerializeField] private List<FactionsEnum> _targetFactions;
+        [SerializeField] private float chaseDistanceMinimum = 0f;
+        //[SerializeField] private List<CharacterComponent> targetCharacters;
+        [SerializeField] private List<FactionsEnum> targetFactions;
+        [SerializeField] private List<CharacterComponent> acquiredTargets = new List<CharacterComponent>();
+        private CharacterComponent character;
 
-        public void Awake()
+
+        private CharacterComponent Character
         {
-            _character = GetComponent<CharacterComponent>();
+            get
+            {
+                if (this.character == null)
+                {
+                    if (this.TryGetComponent<CharacterComponent>(out var character))
+                    {
+                        this.character = character;
+                    }
+                    else
+                    {
+                        Debug.LogError($"ChaseBehavior on {this.gameObject.name} is missing a CharacterComponent.");
+                    }
+                }
+
+                return this.character;
+            }
         }
 
         public void AcquireTarget(CharacterComponent target)
         {
-            if (_targetCharacters.Contains(target) || _targetFactions.Contains(target.Faction))
+            if (this.acquiredTargets.Contains(target))
             {
-                _acquiredTargets.Add(target);
-                TryPursuing(target);
+                // Target is not valid, ignore it.
+                Debug.Log($"{this.gameObject.name} cannot acquire target {target.gameObject.name} because it is already an acquired target.");
+                return;
             }
+
+            if (!this.targetFactions.Contains(target.Faction))
+            {
+                Debug.Log($"{this.gameObject.name} cannot acquire target {target.gameObject.name} because it is not a target Faction.");
+                return;
+            }
+
+            Debug.Log($"{this.gameObject.name} acquired target {target.gameObject.name}.");
+
+            this.acquiredTargets.Add(target);
+            this.TryPursuing(target);
         }
 
-        public void DisengageTarget(CharacterComponent target) => _acquiredTargets.Remove(target);
+        public void DisengageTarget(CharacterComponent target) => acquiredTargets.Remove(target);
 
         private void TryPursuing(CharacterComponent target)
         {
-            if (!_pursuing)
+            if (pursuing)
             {
-                StartCoroutine(IPursue(target));
+                // Already pursuing a target.
+                return;
             }
+
+            this.StartCoroutine(IPursue(target));
         }
 
         private IEnumerator IPursue(CharacterComponent target)
         {
-            _pursuing = true;
+            this.pursuing = true;
 
-            while (_acquiredTargets.Contains(target))
+            while (this.acquiredTargets.Contains(target))
             {
-                RaycastHit2D hit = Physics2D.Linecast(transform.position, target.transform.position, LayerMask.NameToLayer("Player"));
+                var layerMask = LayerMask.GetMask("Player");
 
-                if ((hit.collider == null || hit.collider == _character.Collider) && Vector2.Distance(transform.position, target.transform.position) > _minChaseDistance)
+                var hit = Physics2D.Linecast(this.transform.position, target.transform.position, layerMask);
+
+                if ((hit.collider == null || hit.collider == this.Character.Collider) && Vector2.Distance(this.transform.position, target.transform.position) > this.chaseDistanceMinimum)
                 {
-                    Debug.DrawLine(transform.position, target.transform.position, Color.green);
-                    _character.Move(new Vector2(target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y));
+                    Debug.DrawLine(this.transform.position, target.transform.position, Color.green);
+                    this.Character.Move(new Vector2(target.transform.position.x - this.transform.position.x, target.transform.position.y - this.transform.position.y));
                 }
                 else
                 {
-                    Debug.DrawLine(transform.position, target.transform.position, Color.red);
-                    _character.Move(Vector2.zero);
+                    Debug.DrawLine(this.transform.position, target.transform.position, Color.red);
+                    this.Character.Move(Vector2.zero);
                 }
 
                 yield return null;
             }
 
-            _pursuing = false;
+            this.pursuing = false;
 
-            if (_acquiredTargets.Count > 0) { TryPursuing(_acquiredTargets[0]); }
-            else { _character.InputMove(Vector2.zero); }
+            if (this.acquiredTargets.Count > 0)
+            {
+                this.TryPursuing(this.acquiredTargets.First());
+            }
+            else
+            {
+                this.Character.InputMove(Vector2.zero);
+            }
         }
     }
 }

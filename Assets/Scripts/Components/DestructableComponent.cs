@@ -53,15 +53,13 @@ namespace Assets.Scripts.Components
             {
                 if (this.rigidbody == null)
                 {
-                    var rigidBody = this.GetComponent<Rigidbody2D>();
-
-                    if (rigidBody != null)
+                    if (this.TryGetComponent<Rigidbody2D>(out var rigidbody))
                     {
-                        this.rigidbody = rigidBody;
+                        this.rigidbody = rigidbody;
                     }
                     else
                     {
-                        Debug.LogError($"DestructableComponent on {gameObject.name} is missing a Rigidbody2D component.");
+                        Debug.LogError($"DestructableComponent on {this.gameObject.name} is missing a Rigidbody2D component.");
                     }
                 }
 
