@@ -33,7 +33,7 @@ namespace Assets.Scripts.Components
             }
         }
 
-        protected Collider2D Collider
+        public Collider2D Collider
         {
             get
             {
