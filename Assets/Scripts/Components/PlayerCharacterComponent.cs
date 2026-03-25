@@ -22,7 +22,6 @@ public class PlayerCharacterComponent : CharacterComponent
 
     void Awake()
     {
-        _animator = GetComponent<Animator>();
         EquipItem(this.inventory.GetDefaultItem());
         this.HUD.HealthBarComponent.UpdateHealth(this.Health);
         this.HUD.MoneyComponent.UpdateMoney(this.wallet.Money);
@@ -66,8 +65,8 @@ public class PlayerCharacterComponent : CharacterComponent
 
     public InteractableComponent ParseInteraction()
     {
-        var start = _rigidbody.position + _collider.offset + (_facing * 1.25f) + (new Vector2(_facing.y, _facing.x) * 0.75f);
-        var end = _rigidbody.position + _collider.offset + (_facing * 1.25f) - (new Vector2(_facing.y, _facing.x) * 0.75f);
+        var start = this.Rigidbody.position + this.Collider.offset + (_facing * 1.25f) + (new Vector2(_facing.y, _facing.x) * 0.75f);
+        var end = this.Rigidbody.position + this.Collider.offset + (_facing * 1.25f) - (new Vector2(_facing.y, _facing.x) * 0.75f);
 
         if (GameManager.Instance.DebugMode) { Debug.DrawLine(start, end, Color.green); }
         RaycastHit2D hit = Physics2D.Linecast(start, end, 1 << LayerMask.NameToLayer("Object"));
@@ -104,13 +103,13 @@ public class PlayerCharacterComponent : CharacterComponent
 
     private IEnumerator IAttack()
     {
-        _animator.SetBool("IsAttacking", true);
+        this.Animator.SetBool("IsAttacking", true);
         var multiplier = moveSpeedMultiplier;
         moveSpeedMultiplier = 0.0f;
 
         yield return new WaitForSeconds(1f / 3f); // TODO: Replace with anim.ClipLength if possible: will need to figure out how to access the clip from the Animator
 
-        _animator.SetBool("IsAttacking", false);
+        this.Animator.SetBool("IsAttacking", false);
         moveSpeedMultiplier = multiplier;
     }
 }
