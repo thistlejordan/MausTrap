@@ -1,8 +1,6 @@
 ﻿using Assets.Scripts.Components;
 using Assets.Scripts.Enums;
 using Assets.Scripts.Helpers;
-using Assets.Scripts.Managers;
-using Assets.Scripts.Models;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
