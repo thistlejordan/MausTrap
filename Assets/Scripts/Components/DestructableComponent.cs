@@ -6,33 +6,58 @@ using UnityEngine;
 namespace Assets.Scripts.Components
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public abstract class DestructableComponent : AnimatedObjectComponent
+    public class DestructableComponent : AnimatedObjectComponent
     {
         [SerializeField] private int defense;
         [SerializeField] private int health;
         [SerializeField] private int healthMax;
         [SerializeField] private bool invincible;
-        private Rigidbody2D rigidBody;
+        private new Rigidbody2D rigidbody;
 
-        public int Defense { get; }
+        public int Defense => this.defense;
 
-        public int Health { get; protected set; }
+        public int Health
+        {
+            get => this.health;
+            protected set
+            {
+                if (value > this.HealthMax)
+                {
+                    this.health = this.HealthMax;
+                }
+                else if (value < 0)
+                {
+                    this.health = 0;
+                }
+                else
+                {
+                    this.health = value;
+                }
+            }
+        }
 
-        public int HealthMax { get; }
+        public int HealthMax => this.healthMax;
 
-        public bool Invincible { get; protected set; }
+        public bool Invincible
+        {
+            get => this.invincible;
+            protected set
+            {
+                this.invincible = value;
+            }
+        }
 
         public Rigidbody2D Rigidbody
         {
             get
             {
-                if (this.rigidBody == null)
+                if (this.rigidbody == null)
                 {
                     var rigidBody = this.GetComponent<Rigidbody2D>();
 
                     if (rigidBody != null)
                     {
-                        this.rigidBody = rigidBody;
+                        this.rigidbody = rigidBody;
                     }
                     else
                     {
@@ -40,7 +65,7 @@ namespace Assets.Scripts.Components
                     }
                 }
 
-                return this.rigidBody;
+                return this.rigidbody;
             }
         }
 
