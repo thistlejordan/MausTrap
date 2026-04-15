@@ -78,7 +78,6 @@ namespace Assets.Scripts.Components
             if (this.Health <= 0 && !this.Animator.GetBool("dead"))
             {
                 Debug.Log($"Health: {this.Health}");
-                this.Animator.SetBool("dead", true);
                 this.Die();
             }
         }
