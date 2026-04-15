@@ -78,11 +78,14 @@ namespace Assets.Scripts.Behaviors
 
             while (this.acquiredTargets.Contains(target))
             {
-                var layerMask = LayerMask.GetMask("Player");
-
+                var layersToTarget = new string[] { "Player", "Ally" };
+                var layerMask = LayerMask.GetMask(layersToTarget);
                 var hit = Physics2D.Linecast(this.transform.position, target.transform.position, layerMask);
 
-                if ((hit.collider == null || hit.collider == this.Character.Collider) && Vector2.Distance(this.transform.position, target.transform.position) > this.chaseDistanceMinimum)
+                //TODO: Start here 3/25/2026
+                if (hit.collider != null
+                    && hit.collider != this.Character.Collider
+                    && Vector2.Distance(this.transform.position, target.transform.position) > this.chaseDistanceMinimum)
                 {
                     Debug.DrawLine(this.transform.position, target.transform.position, Color.green);
                     this.Character.Move(new Vector2(target.transform.position.x - this.transform.position.x, target.transform.position.y - this.transform.position.y));
