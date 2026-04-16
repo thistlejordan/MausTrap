@@ -140,7 +140,14 @@ namespace Assets.Scripts.Components
         private IEnumerator IDie()
         {
             this.Animator.SetBool("dead", true);
-            yield return new WaitForSeconds(this.Animator.GetCurrentAnimatorStateInfo(0).length);
+            yield return new WaitForEndOfFrame();
+            var animatorStateInfo = this.Animator.GetCurrentAnimatorStateInfo(0);
+            while (animatorStateInfo.normalizedTime < 1.0f)
+            {
+                yield return null;
+                animatorStateInfo = this.Animator.GetCurrentAnimatorStateInfo(0);
+            }
+
             Destroy(this.gameObject);
         }
     }
