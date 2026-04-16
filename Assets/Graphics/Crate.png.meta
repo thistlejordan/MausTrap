@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 31c75c728569a2446a12ca3c38c85b5f
+guid: 7a52e415510de6141903217853876ccc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: GenericEnemySprites_0
+      213: -1362058913294850930
+    second: Crate_0
   - first:
-      213: 21300002
-    second: GenericEnemySprites_1
+      213: 7915073754930829435
+    second: Crate_1
   - first:
-      213: 21300004
-    second: GenericEnemySprites_2
+      213: -7623127877837247841
+    second: Crate_2
   - first:
-      213: 21300006
-    second: GenericEnemySprites_3
+      213: -6784770489113608533
+    second: Crate_3
   - first:
-      213: 21300008
-    second: GenericEnemySprites_4
+      213: -8964160168907264794
+    second: Crate_4
   - first:
-      213: 21300010
-    second: GenericEnemySprites_5
+      213: 2519856410613344765
+    second: Crate_5
   - first:
-      213: 21300012
-    second: GenericEnemySprites_6
-  - first:
-      213: 21300014
-    second: GenericEnemySprites_7
+      213: 1588992612279703413
+    second: Crate_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,16 +84,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,12 +105,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 2
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -134,139 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GenericEnemySprites_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GenericEnemySprites_6
+      name: Crate_0
       rect:
         serializedVersion: 2
         x: 0
@@ -274,21 +139,21 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: e84e7e582aef81de0800000000000000
+      internalID: -1362058913294850930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GenericEnemySprites_7
+      name: Crate_1
       rect:
         serializedVersion: 2
         x: 16
@@ -296,15 +161,103 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: b785bade4adf7dd60800000000000000
+      internalID: 7915073754930829435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crate_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a222c8595353690800000000000000
+      internalID: -7623127877837247841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crate_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae74d9ff27a7d1a0800000000000000
+      internalID: -6784770489113608533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crate_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eca39e02d7e89380800000000000000
+      internalID: -8964160168907264794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crate_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9699ffd0458f220800000000000000
+      internalID: 2519856410613344765
       vertices: []
       indices: 
       edges: []
@@ -313,7 +266,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2e046a76da8b42b419ba12a6d339bebb
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +274,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      GenericEnemySprites_0: 21300000
-      GenericEnemySprites_1: 21300002
-      GenericEnemySprites_2: 21300004
-      GenericEnemySprites_3: 21300006
-      GenericEnemySprites_4: 21300008
-      GenericEnemySprites_5: 21300010
-      GenericEnemySprites_6: 21300012
-      GenericEnemySprites_7: 21300014
+      Crate_0: -1362058913294850930
+      Crate_1: 7915073754930829435
+      Crate_2: -7623127877837247841
+      Crate_3: -6784770489113608533
+      Crate_4: -8964160168907264794
+      Crate_5: 2519856410613344765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
