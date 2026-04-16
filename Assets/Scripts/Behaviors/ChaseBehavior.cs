@@ -82,7 +82,6 @@ namespace Assets.Scripts.Behaviors
                 var layerMask = LayerMask.GetMask(layersToTarget);
                 var hit = Physics2D.Linecast(this.transform.position, target.transform.position, layerMask);
 
-                //TODO: Start here 3/25/2026
                 if (hit.collider != null
                     && hit.collider != this.Character.Collider
                     && Vector2.Distance(this.transform.position, target.transform.position) > this.chaseDistanceMinimum)
