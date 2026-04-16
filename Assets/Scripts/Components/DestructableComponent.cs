@@ -12,6 +12,7 @@ namespace Assets.Scripts.Components
         [SerializeField] private int health;
         [SerializeField] private int healthMax;
         [SerializeField] private bool invincible;
+        [SerializeField] private bool hasIFrames;
         private new Rigidbody2D rigidbody;
 
         public int Defense => this.defense;
@@ -89,7 +90,11 @@ namespace Assets.Scripts.Components
                 return;
             }
 
-            this.InvincibilityFrames();
+            if(this.hasIFrames)
+            {
+                this.InvincibilityFrames();
+            }
+
             this.TakeDamage(CalculateTrueDamage(attack.Damage));
             this.Knockback(attack.KnockbackDirection, attack.KnockbackForce);
             this.CheckForDeath();
