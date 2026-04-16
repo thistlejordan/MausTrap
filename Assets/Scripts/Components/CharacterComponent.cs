@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterComponent : DestructableComponent
+public class CharacterComponent : DestructibleComponent
 {
     // Debugging
     public Text _queueText = null;

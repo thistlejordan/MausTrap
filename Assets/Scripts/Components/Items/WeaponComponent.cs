@@ -13,7 +13,7 @@ namespace Assets.Scripts.Components.Items
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-            var target = other.GetComponent<DestructableComponent>();
+            var target = other.GetComponent<DestructibleComponent>();
 
             if (target == null)
             {

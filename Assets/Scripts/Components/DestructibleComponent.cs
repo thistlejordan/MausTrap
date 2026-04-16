@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Assets.Scripts.Components
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class DestructableComponent : AnimatedObjectComponent
+    public class DestructibleComponent : AnimatedObjectComponent
     {
         [SerializeField] private int defense;
         [SerializeField] private int health;
@@ -60,7 +60,7 @@ namespace Assets.Scripts.Components
                     }
                     else
                     {
-                        Debug.LogError($"DestructableComponent on {this.gameObject.name} is missing a Rigidbody2D component.");
+                        Debug.LogError($"DestructibleComponent on {this.gameObject.name} is missing a Rigidbody2D component.");
                     }
                 }
 
