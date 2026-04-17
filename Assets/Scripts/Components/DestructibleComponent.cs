@@ -13,6 +13,7 @@ namespace Assets.Scripts.Components
         [SerializeField] private int healthMax;
         [SerializeField] private bool invincible;
         [SerializeField] private bool hasIFrames;
+        private bool isDead;
         private new Rigidbody2D rigidbody;
 
         public int Defense => this.defense;
@@ -74,12 +75,16 @@ namespace Assets.Scripts.Components
 
         private void TakeDamage(int trueDamage) => this.Health = (this.Health - trueDamage >= 0) ? this.Health - trueDamage : 0;
 
-        private void CheckForDeath()
+        private void PostDamageChecks()
         {
-            if (this.Health <= 0 && !this.Animator.GetBool("dead"))
+            if (this.Health <= 0 && !this.isDead)
             {
                 Debug.Log($"Health: {this.Health}");
                 this.Die();
+            }
+            else if (this.hasIFrames)
+            {
+                this.InvincibilityFrames();
             }
         }
 
@@ -90,20 +95,15 @@ namespace Assets.Scripts.Components
                 return;
             }
 
-            if(this.hasIFrames)
-            {
-                this.InvincibilityFrames();
-            }
-
             this.TakeDamage(CalculateTrueDamage(attack.Damage));
             this.Knockback(attack.KnockbackDirection, attack.KnockbackForce);
-            this.CheckForDeath();
+            this.PostDamageChecks();
         }
 
         private void InvincibilityFrames()
         {
             this.Invincible = true;
-            this.StartCoroutine(IInvincibilityFrames());
+            this.StartCoroutine(this.IInvincibilityFrames());
         }
 
         private IEnumerator IInvincibilityFrames()
@@ -132,7 +132,7 @@ namespace Assets.Scripts.Components
             this.Invincible = false;
         }
 
-        public virtual Coroutine Knockback(Vector2 direction, float force) => this.StartCoroutine(IKnockback(direction, force));
+        public virtual Coroutine Knockback(Vector2 direction, float force) => this.StartCoroutine(this.IKnockback(direction, force));
 
         private IEnumerator IKnockback(Vector2 direction, float force)
         {
@@ -140,11 +140,15 @@ namespace Assets.Scripts.Components
             yield return new WaitForSeconds(0.1f);
         }
 
-        private void Die() => this.StartCoroutine(IDie());
+        private void Die()
+        {
+            this.isDead = true;
+            this.Animator.SetBool("dead", true);
+            this.StartCoroutine(this.IDie());
+        }
 
         private IEnumerator IDie()
         {
-            this.Animator.SetBool("dead", true);
             yield return new WaitForEndOfFrame();
             var animatorStateInfo = this.Animator.GetCurrentAnimatorStateInfo(0);
             while (animatorStateInfo.normalizedTime < 1.0f)
@@ -153,7 +157,8 @@ namespace Assets.Scripts.Components
                 animatorStateInfo = this.Animator.GetCurrentAnimatorStateInfo(0);
             }
 
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            // Destroy(this.gameObject);
         }
     }
 }
